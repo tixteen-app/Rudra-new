@@ -29,11 +29,11 @@ const ContactSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <p className="text-white text-lg md:text-xl leading-relaxed">
-            We take pride in building successful, long-term relationships with our clients, because their reputation is our priority.
+            At Rudra Castings, we combine our 75,000 sq. ft. ISO-certified manufacturing capabilities with personalized service to deliver investment castings that exceed expectations. Our team is ready to discuss how we can support your specific requirements with our round-the-clock production capacity and commitment to precision.
           </p>
           
           <p className="text-white text-lg md:text-xl leading-relaxed">
-            If that sounds like an investment castings partner you'd like to work with, you can book an introduction call with our friendly and knowledgeable New Relations Team — in a language and time zone to suit you.
+            Whether you're looking for a reliable long-term partner or need urgent casting solutions, we invite you to connect with our expert team. Let's explore how our state-of-the-art facilities and quality-driven approach can add value to your projects.
           </p>
         </motion.div>
 
@@ -51,7 +51,7 @@ const ContactSection: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Schedule a New Business Call
+            Schedule a Consultation
           </motion.button>
 
           {/* Procurement Information Button */}
@@ -60,7 +60,7 @@ const ContactSection: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Procurement Information
+            Request Technical Specifications
           </motion.button>
         </motion.div>
       </div>

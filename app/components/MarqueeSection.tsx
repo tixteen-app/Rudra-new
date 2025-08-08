@@ -1,21 +1,48 @@
-"use client"
+"use client";
 
-import React from 'react';
-import { motion } from 'motion/react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import React from "react";
+import { motion } from "motion/react";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const MarqueeSection: React.FC = () => {
   // Company logos data - using placeholder images that match common brand colors/styles
   const companies = [
-    { name: 'Continental', logo: 'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=120&h=60&fit=crop&crop=center' },
-    { name: 'BMW', logo: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=120&h=60&fit=crop&crop=center' },
-    { name: 'Stanley Black & Decker', logo: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=120&h=60&fit=crop&crop=center' },
-    { name: 'Porsche', logo: 'https://images.unsplash.com/photo-1580414617778-d2bb9fa2366e?w=120&h=60&fit=crop&crop=center' },
-    { name: 'Mercedes-Benz', logo: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=120&h=60&fit=crop&crop=center' },
-    { name: 'Volvo', logo: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=120&h=60&fit=crop&crop=center' },
-    { name: 'TATA', logo: 'https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=120&h=60&fit=crop&crop=center' },
-    { name: 'Stryker', logo: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=120&h=60&fit=crop&crop=center' },
-    { name: 'Volkswagen', logo: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=120&h=60&fit=crop&crop=center' }
+    {
+      name: "Continental",
+      logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=120&h=60&fit=crop&crop=center",
+    },
+    {
+      name: "BMW",
+      logo: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=120&h=60&fit=crop&crop=center",
+    },
+    {
+      name: "Stanley Black & Decker",
+      logo: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=120&h=60&fit=crop&crop=center",
+    },
+    {
+      name: "Porsche",
+      logo: "https://images.unsplash.com/photo-1580414617778-d2bb9fa2366e?w=120&h=60&fit=crop&crop=center",
+    },
+    {
+      name: "Mercedes-Benz",
+      logo: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=120&h=60&fit=crop&crop=center",
+    },
+    {
+      name: "Volvo",
+      logo: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=120&h=60&fit=crop&crop=center",
+    },
+    {
+      name: "TATA",
+      logo: "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=120&h=60&fit=crop&crop=center",
+    },
+    {
+      name: "Stryker",
+      logo: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=120&h=60&fit=crop&crop=center",
+    },
+    {
+      name: "Volkswagen",
+      logo: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=120&h=60&fit=crop&crop=center",
+    },
   ];
 
   // Duplicate the array for seamless loop
@@ -42,15 +69,15 @@ const MarqueeSection: React.FC = () => {
           <motion.div
             className="flex items-center space-x-16"
             animate={{
-              x: ['0%', '-50%']
+              x: ["0%", "-50%"],
             }}
             transition={{
               duration: 30,
               repeat: Infinity,
-              ease: 'linear'
+              ease: "linear",
             }}
             style={{
-              width: 'calc(200% + 4rem)'
+              width: "calc(200% + 4rem)",
             }}
           >
             {duplicatedCompanies.map((company, index) => (
@@ -78,14 +105,18 @@ const MarqueeSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-normal">
-            We proudly manufacture long-lifespan steel, aluminium, cobalt and nickel based 
-            precision castings in air and vacuum at our state-of-the-art factories in 
-            North America, Europe and Asia.
+            At Rudra Castings, our state-of-the-art manufacturing facilities in
+            India operate round-the-clock, ensuring we deliver top-quality
+            products that meet even the tightest deadlines with precision and
+            reliability.
           </p>
-          
+
           <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-normal">
-            We are known for solving complex manufacturing challenges, our industry-leading 
-            turnaround times and stringent quality control, all of which deliver value to our customers.
+            Spanning over 75,000 sq. ft. and ISO-certified, our facilities are
+            designed to not only exceed industry standards but also accommodate
+            future expansions as demand grows. We take pride in our commitment
+            to quality, continually refining our processes to remain a leader in
+            the investment castings industry.
           </p>
         </motion.div>
       </div>

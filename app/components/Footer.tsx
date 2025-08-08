@@ -176,6 +176,22 @@ const Footer: React.FC = () => {
             ))}
           </motion.div>
 
+          {/* Rudra Castings Information */}
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-lg font-medium mb-4">Rudra Castings</h3>
+            <div className="space-y-2 text-sm text-gray-300">
+              <p>info@rudracastings.com</p>
+              <p>+919524200019</p>
+              <p>Peer Gajju Shah Road, Badinpur, Mandi Gobindgarh 147301</p>
+            </div>
+          </motion.div>
+
           {/* Social Media Icons */}
           <motion.div
             className="flex justify-center space-x-8 mb-16 md:mb-20"
