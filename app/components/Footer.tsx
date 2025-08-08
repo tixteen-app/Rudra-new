@@ -16,37 +16,37 @@
 //   useEffect(() => {
 //     const updateTimes = () => {
 //       const now = new Date();
-      
+
 //       setTimes({
-//         uk: now.toLocaleTimeString('en-GB', { 
-//           timeZone: 'Europe/London', 
-//           hour12: false, 
-//           hour: '2-digit', 
-//           minute: '2-digit' 
+//         uk: now.toLocaleTimeString('en-GB', {
+//           timeZone: 'Europe/London',
+//           hour12: false,
+//           hour: '2-digit',
+//           minute: '2-digit'
 //         }),
-//         us: now.toLocaleTimeString('en-US', { 
-//           timeZone: 'America/New_York', 
-//           hour12: false, 
-//           hour: '2-digit', 
-//           minute: '2-digit' 
+//         us: now.toLocaleTimeString('en-US', {
+//           timeZone: 'America/New_York',
+//           hour12: false,
+//           hour: '2-digit',
+//           minute: '2-digit'
 //         }),
-//         germany: now.toLocaleTimeString('de-DE', { 
-//           timeZone: 'Europe/Berlin', 
-//           hour12: false, 
-//           hour: '2-digit', 
-//           minute: '2-digit' 
+//         germany: now.toLocaleTimeString('de-DE', {
+//           timeZone: 'Europe/Berlin',
+//           hour12: false,
+//           hour: '2-digit',
+//           minute: '2-digit'
 //         }),
-//         romania: now.toLocaleTimeString('ro-RO', { 
-//           timeZone: 'Europe/Bucharest', 
-//           hour12: false, 
-//           hour: '2-digit', 
-//           minute: '2-digit' 
+//         romania: now.toLocaleTimeString('ro-RO', {
+//           timeZone: 'Europe/Bucharest',
+//           hour12: false,
+//           hour: '2-digit',
+//           minute: '2-digit'
 //         }),
-//         india: now.toLocaleTimeString('en-IN', { 
-//           timeZone: 'Asia/Kolkata', 
-//           hour12: false, 
-//           hour: '2-digit', 
-//           minute: '2-digit' 
+//         india: now.toLocaleTimeString('en-IN', {
+//           timeZone: 'Asia/Kolkata',
+//           hour12: false,
+//           hour: '2-digit',
+//           minute: '2-digit'
 //         })
 //       });
 //     };
@@ -64,7 +64,7 @@
 //       email: 'uk@texmoblank.com'
 //     },
 //     {
-//       country: 'United States', 
+//       country: 'United States',
 //       time: times.us,
 //       phone: '+1 574 696 9990',
 //       email: 'usa@texmoblank.com'
@@ -98,7 +98,7 @@
 
 //   const footerLinks = [
 //     'Manage Cookies',
-//     'Privacy Policy', 
+//     'Privacy Policy',
 //     'Cookies Policy',
 //     'Impressum',
 //     'Terms of Use',
@@ -225,8 +225,8 @@
 //             <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm text-gray-400">
 //               {footerLinks.map((link, index) => (
 //                 <React.Fragment key={link}>
-//                   <a 
-//                     href="#" 
+//                   <a
+//                     href="#"
 //                     className="hover:text-white transition-colors duration-300"
 //                   >
 //                     {link}
@@ -246,58 +246,58 @@
 
 // export default Footer;
 
-"use client"
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Clock, Linkedin, Facebook, Instagram, Youtube } from 'lucide-react';
-import Image from 'next/image';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Clock, Linkedin, Facebook, Instagram, Youtube } from "lucide-react";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   const [times, setTimes] = useState({
-    uk: '',
-    us: '',
-    germany: '',
-    romania: '',
-    india: ''
+    uk: "",
+    us: "",
+    germany: "",
+    romania: "",
+    india: "",
   });
 
   // Update times every second
   useEffect(() => {
     const updateTimes = () => {
       const now = new Date();
-      
+
       setTimes({
-        uk: now.toLocaleTimeString('en-GB', { 
-          timeZone: 'Europe/London', 
-          hour12: false, 
-          hour: '2-digit', 
-          minute: '2-digit' 
+        uk: now.toLocaleTimeString("en-GB", {
+          timeZone: "Europe/London",
+          hour12: false,
+          hour: "2-digit",
+          minute: "2-digit",
         }),
-        us: now.toLocaleTimeString('en-US', { 
-          timeZone: 'America/New_York', 
-          hour12: false, 
-          hour: '2-digit', 
-          minute: '2-digit' 
+        us: now.toLocaleTimeString("en-US", {
+          timeZone: "America/New_York",
+          hour12: false,
+          hour: "2-digit",
+          minute: "2-digit",
         }),
-        germany: now.toLocaleTimeString('de-DE', { 
-          timeZone: 'Europe/Berlin', 
-          hour12: false, 
-          hour: '2-digit', 
-          minute: '2-digit' 
+        germany: now.toLocaleTimeString("de-DE", {
+          timeZone: "Europe/Berlin",
+          hour12: false,
+          hour: "2-digit",
+          minute: "2-digit",
         }),
-        romania: now.toLocaleTimeString('ro-RO', { 
-          timeZone: 'Europe/Bucharest', 
-          hour12: false, 
-          hour: '2-digit', 
-          minute: '2-digit' 
+        romania: now.toLocaleTimeString("ro-RO", {
+          timeZone: "Europe/Bucharest",
+          hour12: false,
+          hour: "2-digit",
+          minute: "2-digit",
         }),
-        india: now.toLocaleTimeString('en-IN', { 
-          timeZone: 'Asia/Kolkata', 
-          hour12: false, 
-          hour: '2-digit', 
-          minute: '2-digit' 
-        })
+        india: now.toLocaleTimeString("en-IN", {
+          timeZone: "Asia/Kolkata",
+          hour12: false,
+          hour: "2-digit",
+          minute: "2-digit",
+        }),
       });
     };
 
@@ -308,51 +308,51 @@ const Footer: React.FC = () => {
 
   const locations = [
     {
-      country: 'United Kingdom',
+      country: "United Kingdom",
       time: times.uk,
-      phone: '+44 114 399 5710',
-      email: 'uk@texmoblank.com'
+      phone: "+44 114 399 5710",
+      email: "uk@texmoblank.com",
     },
     {
-      country: 'United States', 
+      country: "United States",
       time: times.us,
-      phone: '+1 574 696 9990',
-      email: 'usa@texmoblank.com'
+      phone: "+1 574 696 9990",
+      email: "usa@texmoblank.com",
     },
     {
-      country: 'Germany',
+      country: "Germany",
       time: times.germany,
-      phone: '+49 7371 1820',
-      email: 'germany@texmoblank.com'
+      phone: "+49 7371 1820",
+      email: "germany@texmoblank.com",
     },
     {
-      country: 'Romania',
+      country: "Romania",
       time: times.romania,
-      phone: '+40 256 22 7817',
-      email: 'romania@texmoblank.com'
+      phone: "+40 256 22 7817",
+      email: "romania@texmoblank.com",
     },
     {
-      country: 'India',
+      country: "India",
       time: times.india,
-      phone: '+91 425 920 0500',
-      email: 'india@texmoblank.com'
-    }
+      phone: "+91 425 920 0500",
+      email: "india@texmoblank.com",
+    },
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Youtube, href: '#', label: 'YouTube' }
+    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Youtube, href: "#", label: "YouTube" },
   ];
 
   const footerLinks = [
-    'Manage Cookies',
-    'Privacy Policy', 
-    'Cookies Policy',
-    'Impressum',
-    'Terms of Use',
-    'Disclaimer'
+    "Manage Cookies",
+    "Privacy Policy",
+    "Cookies Policy",
+    "Impressum",
+    "Terms of Use",
+    "Disclaimer",
   ];
 
   return (
@@ -367,7 +367,10 @@ const Footer: React.FC = () => {
           className="w-full h-full object-cover"
           style={{ opacity: 1.0 }}
         >
-          <source src="https://www.texmoblank.com/videos/footer-video.webm" type="video/webm" />
+          <source
+            src="https://www.texmoblank.com/videos/footer-video.webm"
+            type="video/webm"
+          />
         </video>
         <div className="absolute inset-0 bg-black/10" />
       </div>
@@ -388,9 +391,11 @@ const Footer: React.FC = () => {
                 <Image
                   src="/rudra-logo.png"
                   alt="Rudra Logo"
-                  fill
-                  style={{ objectFit: 'contain' }}
+                  // fill
+                  style={{ objectFit: "contain" }}
                   priority
+                  width={180} // Set explicit width
+                  height={80}
                 />
               </div>
             </div>
@@ -482,8 +487,8 @@ const Footer: React.FC = () => {
             <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm text-gray-400">
               {footerLinks.map((link, index) => (
                 <React.Fragment key={link}>
-                  <a 
-                    href="#" 
+                  <a
+                    href="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     {link}
