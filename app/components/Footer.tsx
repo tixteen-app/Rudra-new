@@ -387,12 +387,12 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="inline-flex flex-col items-center">
-              <div className="w-60 h-40 relative">
+              <div className="w-80 h-50 relative">
                  <Image
                   src="/Rudra-Logo.png" // Changed to local path
                   alt="Rudra Logo"
-                  width={160}
-                  height={48}
+                  width={300}
+                  height={70}
                   priority
                   className="object-contain"
                 />
