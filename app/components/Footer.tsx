@@ -391,11 +391,10 @@ const Footer: React.FC = () => {
                 <Image
                   src="/rudra-logo.png"
                   alt="Rudra Logo"
-                  // fill
-                  style={{ objectFit: "contain" }}
+                  width={260} // Set your logo's display width
+                  height={80} // Set your logo's display height
                   priority
-                  width={180} // Set explicit width
-                  height={80}
+                  className="object-contain" // Tailwind alternative to style prop
                 />
               </div>
             </div>

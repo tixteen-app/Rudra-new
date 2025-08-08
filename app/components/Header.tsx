@@ -336,7 +336,7 @@ const Header: React.FC = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="max-w-7xl mx-auto px-2 md:px-5 py-4">
+      <div className="max-w-7xl mx-auto px-p md:px-0 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
@@ -347,11 +347,10 @@ const Header: React.FC = () => {
               <Image
                 src="/rudra-logo.png"
                 alt="Rudra Logo"
-                // fill
-                style={{ objectFit: "contain" }}
+                width={160} // Set your logo's display width
+                height={40} // Set your logo's display height
                 priority
-                width={160} // Set explicit width
-                height={40}
+                className="object-contain" // Tailwind alternative to style prop
               />
             </div>
           </motion.div>

@@ -14,44 +14,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Rudra Castings | Precision Investment Casting Solutions",
-  description: "Global leader in precision investment casting solutions since 2008. Serving automotive, defense, medical, and industrial sectors with superior quality components.",
+  description: "Global leader in precision investment casting solutions since 2008",
   icons: {
-    icon: [
-      {
-        url: "/Rudra-Logo.png",
-        type: "image/png",
-      },
-      {
-        url: "/Rudra-Logo.png",
-        type: "image/x-icon",
-      },
-    ],
-    apple: [
-      {
-        url: "/apple-touch-icon.png",
-      }
-    ],
+    icon: "/Rudra-Logo.png", // Directly using your logo
+    shortcut: "/Rudra-Logo.png",
+    apple: "/Rudra-Logo.png",
   },
   openGraph: {
     title: "Rudra Castings",
     description: "Global leader in precision investment casting solutions since 2008",
-    url: "https://www.rudracastings.com",
-    siteName: "Rudra Castings",
-    images: [
-      {
-        url: "/Rudra-Logo.png",
-        width: 800,
-        height: 600,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Rudra Castings",
-    description: "Global leader in precision investment casting solutions since 2008",
-    images: ["/Rudra-Logo.png"],
+    images: "/Rudra-Logo.png",
   },
 };
 
@@ -63,15 +35,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="manifest"
-          href="/site.webmanifest"
-          crossOrigin="use-credentials"
-        />
+        {/* Explicit favicon links */}
+        <link rel="icon" href="/Rudra-Logo.png" type="image/png" />
+        <link rel="shortcut icon" href="/Rudra-Logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/Rudra-Logo.png" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
