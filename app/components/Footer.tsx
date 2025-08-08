@@ -388,13 +388,13 @@ const Footer: React.FC = () => {
           >
             <div className="inline-flex flex-col items-center">
               <div className="w-60 h-40 relative">
-                <Image
-                  src="/rudra-logo.png"
+                 <Image
+                  src="/Rudra-Logo.png" // Changed to local path
                   alt="Rudra Logo"
-                  width={260} // Set your logo's display width
-                  height={80} // Set your logo's display height
+                  width={160}
+                  height={48}
                   priority
-                  className="object-contain" // Tailwind alternative to style prop
+                  className="object-contain"
                 />
               </div>
             </div>
