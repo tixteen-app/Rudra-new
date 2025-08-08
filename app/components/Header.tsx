@@ -344,13 +344,13 @@ const Header: React.FC = () => {
             whileHover={{ scale: 1.02 }}
           >
             <div className="w-50 h-15 relative">
-              <Image
-                src="/rudra-logo.png"
+            <Image
+                src="/Rudra-Logo.png" // Changed to local path
                 alt="Rudra Logo"
-                width={160} // Set your logo's display width
-                height={40} // Set your logo's display height
+                width={160}
+                height={48}
                 priority
-                className="object-contain" // Tailwind alternative to style prop
+                className="object-contain"
               />
             </div>
           </motion.div>
