@@ -591,20 +591,23 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex mx-12 gap-1 relative z-50">
             {navItems.map((item, idx) => (
-              <button
-                key={item.title}
-                onMouseEnter={() => handleMouseEnter(idx)}
-                onFocus={() => handleMouseEnter(idx)}
-                className={`transition-colors text-base font-medium ${
-                  hoverIdx === idx
-                    ? "text-gray-900 font-semibold"
-                    : "text-gray-500"
-                } px-3 py-2`}
-                type="button"
-                style={{ fontFamily: "var(--kohinoor-2)" }}
-              >
-                {item.title}
-              </button>
+             <button
+             key={item.title}
+             onMouseEnter={() => handleMouseEnter(idx)}
+             onFocus={() => handleMouseEnter(idx)}
+             className={`transition-colors text-lg font-medium ${
+               hoverIdx === idx
+                 ? "text-gray-900 font-semibold"
+                 : ""
+             } px-3 py-2`}
+             type="button"
+             style={{ 
+               fontFamily: "var(--kohinoor-2)",
+               color: hoverIdx === idx ? "" : "#6a6c72" 
+             }}
+           >
+             {item.title}
+           </button>
             ))}
           </nav>
           {/* Mobile Hamburger */}
