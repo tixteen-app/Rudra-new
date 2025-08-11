@@ -558,7 +558,7 @@ const Header: React.FC = () => {
                     <a
                       href={`#${sub.toLowerCase().replace(/ /g, "-")}`}
                       className="block text-gray-600 hover:text-gray-900 transition-colors text-left text-xl"
-                      style={{ fontFamily: "var(--kohinoor-2)" }}
+                      style={{ fontFamily: "var(--kohinoor-2)" , fontWeight:"300" }}
                     >
                       {sub}
                     </a>
