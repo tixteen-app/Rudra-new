@@ -92,7 +92,9 @@ const ProductSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-600 font-normal">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-600 font-normal"
+          style={{color:"#a4b0ae" , fontFamily: 'var(--kohinoor-2)' }}
+          >
             We Deliver instead of "Your Purpose,Our Priority"
           </h2>
         </motion.div>

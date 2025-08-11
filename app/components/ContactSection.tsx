@@ -28,11 +28,15 @@ const ContactSection: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <p className="text-white text-lg md:text-xl leading-relaxed">
+          <p className="text-white text-lg md:text-xl leading-relaxed"
+          style={{ fontFamily: 'var(--kohinoor-2)' }}
+          >
             At Rudra Castings, we combine our 75,000 sq. ft. ISO-certified manufacturing capabilities with personalized service to deliver investment castings that exceed expectations. Our team is ready to discuss how we can support your specific requirements with our round-the-clock production capacity and commitment to precision.
           </p>
           
-          <p className="text-white text-lg md:text-xl leading-relaxed">
+          <p className="text-white text-lg md:text-xl leading-relaxed"
+          style={{ fontFamily: 'var(--kohinoor-2)' }}
+          >
             Whether you're looking for a reliable long-term partner or need urgent casting solutions, we invite you to connect with our expert team. Let's explore how our state-of-the-art facilities and quality-driven approach can add value to your projects.
           </p>
         </motion.div>

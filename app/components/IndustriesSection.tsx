@@ -36,7 +36,10 @@ const IndustriesSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-400 font-normal">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-400 font-normal"
+          style={{fontFamily: 'var(--kohinoor-2)' }}
+          
+          >
             We Span Industries & Relish Complex Challenges
           </h2>
         </motion.div>
