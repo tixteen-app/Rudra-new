@@ -51,8 +51,7 @@ const MarqueeSection: React.FC = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Title */}
-        <motion.div
+        {/* <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -63,8 +62,6 @@ const MarqueeSection: React.FC = () => {
             A Trusted Investment Casting Supplier To:
           </h2>
         </motion.div>
-
-        {/* Marquee Container */}
         <div className="overflow-hidden mb-16">
           <motion.div
             className="flex items-center space-x-16"
@@ -94,7 +91,7 @@ const MarqueeSection: React.FC = () => {
               </motion.div>
             ))}
           </motion.div>
-        </div>
+        </div> */}
 
         {/* Content Paragraphs */}
         <motion.div

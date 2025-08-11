@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useRef, useEffect } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Plus } from 'lucide-react';
 
 const ProductSection: React.FC = () => {
@@ -9,12 +9,34 @@ const ProductSection: React.FC = () => {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const initializedRef = useRef(false);
 
-  // 16 products using the same Texmo Blank video
-  const products = Array.from({ length: 16 }, (_, index) => ({
-    id: index + 1,
-    videoUrl: 'https://cdn.sanity.io/files/226cdrrp/production/070c4f7eef28e06c2fb7086554f4fdd5ed6f82d8.mp4',
-    posterUrl: `https://images.unsplash.com/photo-${1563715656 + index}f3b84bf6ad2b?w=400&h=400&fit=crop&crop=center&q=80`
-  }));
+  // Product data with the new videos
+  const products = [
+    {
+      id: 1,
+      videoUrl: 'https://cdn.sanity.io/files/226cdrrp/production/c7dc0e053b05b3692283ca1769165f3306164cc7.mp4',
+      posterUrl: 'https://images.unsplash.com/photo-1563715656-f3b84bf6ad2b?w=400&h=400&fit=crop&crop=center&q=80'
+    },
+    {
+      id: 2,
+      videoUrl: 'https://cdn.sanity.io/files/226cdrrp/production/280e6e40b41cd3c181efcd9336264795dc49b7e5.mp4',
+      posterUrl: 'https://images.unsplash.com/photo-1563715656-f3b84bf6ad2b?w=400&h=400&fit=crop&crop=center&q=80'
+    },
+    {
+      id: 3,
+      videoUrl: 'https://cdn.sanity.io/files/226cdrrp/production/5241435b2ca6f9bbc81fd21b344dfc6cae15e79c.mp4',
+      posterUrl: 'https://images.unsplash.com/photo-1563715656-f3b84bf6ad2b?w=400&h=400&fit=crop&crop=center&q=80'
+    },
+    // Repeating the videos to fill the grid (you can add more unique videos if needed)
+    ...Array.from({ length: 13 }, (_, index) => ({
+      id: index + 4,
+      videoUrl: [
+        'https://cdn.sanity.io/files/226cdrrp/production/c7dc0e053b05b3692283ca1769165f3306164cc7.mp4',
+        'https://cdn.sanity.io/files/226cdrrp/production/280e6e40b41cd3c181efcd9336264795dc49b7e5.mp4',
+        'https://cdn.sanity.io/files/226cdrrp/production/5241435b2ca6f9bbc81fd21b344dfc6cae15e79c.mp4'
+      ][index % 3],
+      posterUrl: `https://images.unsplash.com/photo-${1563715656 + index}f3b84bf6ad2b?w=400&h=400&fit=crop&crop=center&q=80`
+    }))
+  ];
 
   useEffect(() => {
     if (initializedRef.current) return;
@@ -70,8 +92,8 @@ const ProductSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-400 font-normal">
-            Your Purpose, Our Priority
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-600 font-normal">
+            We Deliver instead of "Your Purpose,Our Priority"
           </h2>
         </motion.div>
 

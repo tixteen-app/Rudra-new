@@ -19,8 +19,8 @@ export default function App() {
       <MarqueeSection />
       <VideoSection />
       <ProductSection />
-      <StatisticsSection />
-      <GlobalLocationsSection />
+      {/* <StatisticsSection /> */}
+      {/* <GlobalLocationsSection /> */}
       <IndustriesSection />
       <NewsSection />
       <ContactSection />
