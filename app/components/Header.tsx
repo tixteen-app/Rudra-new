@@ -1,277 +1,423 @@
+// "use client";
+
+// import React, { useState } from "react";
+// import { Search, ArrowRight } from "lucide-react";
+// import Image from "next/image";
+
+// const navItems = [
+//   {
+//     title: "Solutions",
+//     items: [
+//       "Investment Casting Process",
+//       "Machining & Finishing",
+//       "In-House Tooling",
+//       "Prototyping Services",
+//       "Material Options",
+//       "Quality Inspection & Testing",
+//       "Global Distribution Support",
+//     ],
+//   },
+//   {
+//     title: "Industries We Serve",
+//     items: [
+//       "Automotive",
+//       "Defense",
+//       "Medical",
+//       "Valves & Pumps",
+//       "Construction Equipment",
+//       "General Engineering",
+//     ],
+//   },
+//   {
+//     title: "Why Rudra",
+//     items: [
+//       "Fast Turnaround",
+//       "Reliable Delivery",
+//       "Superior Quality",
+//       "Advanced Production Facilities",
+//       "Comprehensive In-House Services",
+//       "Rapid Prototyping",
+//     ],
+//   },
+//   {
+//     title: "About Us",
+//     items: [
+//       "Our Story",
+//       "Vision & Mission",
+//       "Infrastructure",
+//       "Leadership",
+//       "Careers",
+//       "CSR & Sustainability",
+//     ],
+//   },
+//   {
+//     title: "Resources",
+//     items: [
+//       "FAQs",
+//       "Guides / Downloads",
+//       "Process Videos (future)",
+//       "Blog / Industry Insights",
+//       "Latest Updates / News",
+//     ],
+//   },
+//   {
+//     title: "Get in Touch",
+//     items: [
+//       "General Inquiry",
+//       "Request a Quote",
+//       "Map & Locations",
+//       "Vendor",
+//       "Career Enquiry (Optional)",
+//     ],
+//   },
+// ];
+
+// const Header: React.FC = () => {
+//   const [hoverIdx, setHoverIdx] = useState<number | null>(null);
+
+//   return (
+//     <>
+//       {/* Overlay + White Popup with Items */}
+//       {hoverIdx !== null && (
+//         <div
+//           className="fixed inset-0 z-30"
+//           onMouseLeave={() => setHoverIdx(null)}
+//         >
+//           {/* Blurred Background */}
+//           <div className="absolute inset-0 bg-black/10 backdrop-blur-md transition-all duration-200"></div>
+
+//           {/* White Box Content */}
+//           {/* <div className="absolute left-1/2 top-20 -translate-x-1/2 w-[830px] rounded-2xl shadow-xl border border-gray-100 bg-white p-8 transition-all duration-300">
+         
+//             <h2 className="text-xl font-semibold text-gray-900 mb-4">
+//               {navItems[hoverIdx].title}
+//             </h2>
+
+//             <ul className="grid grid-cols-2 gap-y-3">
+//               {navItems[hoverIdx].items.map((sub, i) => (
+//                 <li key={i}>
+//                   <a
+//                     href={`#${sub.toLowerCase().replace(/ /g, "-")}`}
+//                     className="block text-gray-600 hover:text-gray-900 transition-colors"
+//                   >
+//                     {sub}
+//                   </a>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div> */}
+//           <div className="absolute left-0 top-20 w-full rounded-none shadow-xl border border-gray-100 bg-white p-8 transition-all duration-300">
+//   {/* Heading */}
+//   <h2 className="text-xl font-semibold text-gray-900 mb-4">
+//     {navItems[hoverIdx].title}
+//   </h2>
+
+//   {/* List of Items */}
+//   <ul className="grid grid-cols-2 gap-y-3">
+//     {navItems[hoverIdx].items.map((sub, i) => (
+//       <li key={i}>
+//         <a
+//           href={`#${sub.toLowerCase().replace(/ /g, "-")}`}
+//           className="block text-gray-600 hover:text-gray-900 transition-colors"
+//         >
+//           {sub}
+//         </a>
+//       </li>
+//     ))}
+//   </ul>
+// </div>
+
+//         </div>
+//       )}
+
+//       <header className="w-full bg-white shadow-sm fixed top-0 left-0 right-0 z-40">
+//         <div className="max-w-screen-2xl mx-auto px-6 py-4 flex items-center justify-between relative">
+//           {/* Logo */}
+//           <div className="flex items-center gap-2">
+//             <Image
+//               src="/Rudra-Logo.png"
+//               alt="Rudra Logo"
+//               width={140}
+//               height={34}
+//               priority
+//             />
+//           </div>
+
+//           {/* Navigation Items */}
+//           <nav className="hidden md:flex mx-12 gap-1 relative z-50">
+//             {navItems.map((item, idx) => (
+//               <button
+//                 key={item.title}
+//                 onMouseEnter={() => setHoverIdx(idx)}
+//                 onFocus={() => setHoverIdx(idx)}
+//                 className={`transition-colors text-base font-medium
+//                   ${
+//                     hoverIdx === idx
+//                       ? "text-gray-900 font-semibold"
+//                       : "text-gray-500"
+//                   }
+//                   relative z-50 px-3 py-2
+//                 `}
+//               >
+//                 {item.title}
+//               </button>
+//             ))}
+//           </nav>
+
+//           {/* Actions */}
+//           <div className="flex items-center gap-6 relative z-50">
+//             <Search
+//               size={24}
+//               className="text-gray-400 hover:text-gray-800 cursor-pointer"
+//             />
+//             <span className="text-gray-600 text-lg font-medium">EN</span>
+//             <button className="bg-[#3f4249] hover:bg-[#3a3d43] text-white rounded-2xl px-6 py-2.5 text-base font-semibold flex items-center gap-2 transition-all">
+//               Get started <ArrowRight size={24} />
+//             </button>
+//           </div>
+//         </div>
+//       </header>
+//     </>
+//   );
+// };
+
+// export default Header;
+
+
 "use client";
 
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import {
-  Menu,
-  X,
-  Search,
-  ArrowRight,
-  ChevronDown,
-  ChevronUp,
-} from "lucide-react";
+import React, { useState, useRef } from "react";
+import { Search, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
+const navItems = [
+  {
+    title: "Solutions",
+    items: [
+      "Investment Casting Process",
+      "Machining & Finishing",
+      "In-House Tooling",
+      "Prototyping Services",
+      "Material Options",
+      "Quality Inspection & Testing",
+      "Global Distribution Support",
+    ],
+  },
+  {
+    title: "Industries We Serve",
+    items: [
+      "Automotive",
+      "Defense",
+      "Medical",
+      "Valves & Pumps",
+      "Construction Equipment",
+      "General Engineering",
+    ],
+  },
+  {
+    title: "Why Rudra",
+    items: [
+      "Fast Turnaround",
+      "Reliable Delivery",
+      "Superior Quality",
+      "Advanced Production Facilities",
+      "Comprehensive In-House Services",
+      "Rapid Prototyping",
+    ],
+  },
+  {
+    title: "About Us",
+    items: [
+      "Our Story",
+      "Vision & Mission",
+      "Infrastructure",
+      "Leadership",
+      "Careers",
+      "CSR & Sustainability",
+    ],
+  },
+  {
+    title: "Resources",
+    items: [
+      "FAQs",
+      "Guides / Downloads",
+      "Process Videos (future)",
+      "Blog / Industry Insights",
+      "Latest Updates / News",
+    ],
+  },
+  {
+    title: "Get in Touch",
+    items: [
+      "General Inquiry",
+      "Request a Quote",
+      "Map & Locations",
+      "Vendor",
+      "Career Enquiry (Optional)",
+    ],
+  },
+];
+
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [hoverDropdown, setHoverDropdown] = useState<string | null>(null);
+  const [hoverIdx, setHoverIdx] = useState<number | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const navItems = [
-    {
-      title: "Solutions",
-      items: [
-        "Investment Casting Process",
-        "Machining & Finishing",
-        "In-House Tooling",
-        "Prototyping Services",
-        "Material Options",
-        "Quality Inspection & Testing",
-        "Global Distribution Support",
-      ],
-    },
-    {
-      title: "Industries We Serve",
-      items: [
-        "Automotive",
-        "Defense",
-        "Medical",
-        "Valves & Pumps",
-        "Construction Equipment",
-        "General Engineering",
-      ],
-    },
-    {
-      title: "Why Rudra",
-      items: [
-        "Fast Turnaround",
-        "Reliable Delivery",
-        "Superior Quality",
-        "Advanced Production Facilities",
-        "Comprehensive In-House Services",
-        "Rapid Prototyping",
-      ],
-    },
-    {
-      title: "About Us",
-      items: [
-        "Our Story",
-        "Vision & Mission",
-        "Infrastructure",
-        "Leadership",
-        "Careers",
-        "CSR & Sustainability",
-      ],
-    },
-    {
-      title: "Resources",
-      items: [
-        "FAQs",
-        "Guides / Downloads",
-        "Process Videos (future)",
-        "Blog / Industry Insights",
-        "Latest Updates / News",
-      ],
-    },
-    {
-      title: "Get in Touch",
-      items: [
-        "General Inquiry",
-        "Request a Quote",
-        "Map & Locations",
-        "Vendor",
-        "Career Enquiry (Optional)",
-      ],
-    },
-  ];
+  const handleMouseEnter = (idx: number) => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setHoverIdx(idx);
+    setIsVisible(true);
+  };
 
-  const toggleDropdown = (title: string) => {
-    setActiveDropdown(activeDropdown === title ? null : title);
+  const handleMouseLeave = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(() => {
+      setIsVisible(false);
+      setTimeout(() => setHoverIdx(null), 300); // wait until animation finishes
+    }, 150);
   };
 
   return (
-    <motion.header
-      className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm"
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="max-w-7xl mx-auto px-p md:px-0 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <motion.div
-            className="flex items-center"
-            whileHover={{ scale: 1.02 }}
+    <>
+      {/* Blurred background below header */}
+      {hoverIdx !== null && (
+        <div
+          className={`fixed inset-0 z-20 transition-opacity duration-300 
+            ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+          style={{ top: "72px" }}
+        >
+          <div className="absolute inset-0 backdrop-blur-md bg-black/10"></div>
+        </div>
+      )}
+
+      {/* Mega Menu */}
+      {hoverIdx !== null && (
+        <div
+          className="fixed inset-x-0 top-[72px] z-30"
+          onMouseEnter={() =>
+            timeoutRef.current && clearTimeout(timeoutRef.current)
+          }
+          onMouseLeave={handleMouseLeave}
+        >
+          <div
+            className={`w-full border-t border-gray-100 bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out transform
+              ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 -translate-y-4 pointer-events-none"
+              }
+            `}
+            style={{ height: "320px" }}
           >
-            <div className="w-50 h-15 relative">
-            <Image
-                src="/Rudra-Logo.png" // Changed to local path
-                alt="Rudra Logo"
-                width={160}
-                height={48}
-                priority
-                className="object-contain"
-              />
-            </div>
-          </motion.div>
-
-          {/* Desktop Navigation - Centered */}
-          <nav className="hidden lg:flex items-center space-x-8 pt-4">
-            {navItems.map((item, index) => (
-              <div
-                key={item.title}
-                className="relative"
-                onMouseEnter={() => setHoverDropdown(item.title)}
-                onMouseLeave={() => setHoverDropdown(null)}
+            <div className="max-w-screen-xl mx-auto px-8 py-6 h-full flex flex-col">
+              {/* Heading */}
+              <h2
+                key={`heading-${hoverIdx}`}
+                className="text-2xl font-semibold text-gray-900 text-center mb-4 fade-slide-down"
               >
-                <motion.button
-                  className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 transition-colors text-base font-medium py-2"
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: index * 0.05 }}
-                  whileHover={{ scale: 1.02 }}
-                >
-                  <span>{item.title}</span>
-                  <ChevronDown
-                    size={18}
-                    className="transition-transform duration-200"
-                  />
-                </motion.button>
+                {navItems[hoverIdx].title}
+              </h2>
 
-                <AnimatePresence>
-                  {hoverDropdown === item.title && (
-                    <motion.div
-                      className="absolute left-0 mt-0 w-64 bg-white rounded-md shadow-lg z-50 border border-gray-100"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
-                      transition={{ duration: 0.2 }}
+              {/* Tighter grid with less vertical space */}
+              <ul
+                key={`list-${hoverIdx}`}
+                className="grid grid-cols-3 grid-rows-2 gap-x-8 gap-y-3 justify-items-center flex-1"
+              >
+                {navItems[hoverIdx].items.map((sub, i) => (
+                  <li
+                    key={i}
+                    className="transition-all duration-300 ease-out"
+                    style={{
+                      transitionDelay: `${i * 60}ms`,
+                      opacity: isVisible ? 1 : 0,
+                      transform: isVisible
+                        ? "translateY(0)"
+                        : "translateY(12px)",
+                    }}
+                  >
+                    <a
+                      href={`#${sub.toLowerCase().replace(/ /g, "-")}`}
+                      className="block text-gray-600 hover:text-gray-900 transition-colors text-center"
                     >
-                      <div className="py-2">
-                        {item.items.map((subItem, subIndex) => (
-                          <motion.a
-                            key={subItem}
-                            href={`#${subItem
-                              .toLowerCase()
-                              .replace(/ /g, "-")}`}
-                            className={`block px-4 py-3 text-base ${
-                              subItem === "Request a Quote"
-                                ? "text-blue-600 font-semibold"
-                                : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                            }`}
-                            initial={{ opacity: 0, y: -5 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{
-                              duration: 0.2,
-                              delay: subIndex * 0.05,
-                            }}
-                          >
-                            {subItem}
-                          </motion.a>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+                      {sub}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Header */}
+      <header
+        className="w-full bg-white shadow-sm fixed top-0 left-0 right-0 z-40"
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className="max-w-screen-2xl mx-auto px-6 py-4 flex items-center justify-between relative">
+          {/* Logo */}
+          <div className="flex items-center gap-2">
+            <Image
+              src="/Rudra-Logo.png"
+              alt="Rudra Logo"
+              width={140}
+              height={34}
+              priority
+            />
+          </div>
+
+          {/* Navigation */}
+          <nav className="hidden md:flex mx-12 gap-1 relative z-50">
+            {navItems.map((item, idx) => (
+              <button
+                key={item.title}
+                onMouseEnter={() => handleMouseEnter(idx)}
+                onFocus={() => handleMouseEnter(idx)}
+                className={`transition-colors text-base font-medium
+                  ${
+                    hoverIdx === idx
+                      ? "text-gray-900 font-semibold"
+                      : "text-gray-500"
+                  }
+                  px-3 py-2
+                `}
+              >
+                {item.title}
+              </button>
             ))}
           </nav>
 
-          {/* Right Side Controls */}
-          <div className="hidden lg:flex items-center space-x-6 pt-4">
+          {/* Right Actions */}
+          <div className="flex items-center gap-6 relative z-50">
             <Search
-              size={20}
-              className="text-gray-600 cursor-pointer hover:text-gray-900 transition-colors"
+              size={24}
+              className="text-gray-400 hover:text-gray-800 cursor-pointer"
             />
-            <span className="text-base text-gray-600 font-medium">EN</span>
-            <motion.button
-              className="bg-gray-800 text-white px-6 py-3 rounded-md text-base font-medium hover:bg-gray-700 transition-colors flex items-center space-x-2"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <span>Get started</span>
-              <ArrowRight size={16} />
-            </motion.button>
+            <span className="text-gray-600 text-lg font-medium">EN</span>
+            <button className="bg-[#3f4249] hover:bg-[#3a3d43] text-white rounded-2xl px-6 py-2.5 text-base font-semibold flex items-center gap-2 transition-all">
+              Get started <ArrowRight size={24} />
+            </button>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
+      </header>
 
-        {/* Mobile Navigation */}
-        <AnimatePresence>
-          {isMenuOpen && (
-            <motion.nav
-              className="lg:hidden mt-6 pb-6 border-t border-gray-100 pt-6"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              {navItems.map((item) => (
-                <div key={item.title} className="mb-2">
-                  <button
-                    onClick={() => toggleDropdown(item.title)}
-                    className="w-full flex justify-between items-center py-4 text-gray-700 hover:text-gray-900 transition-colors text-lg font-medium"
-                  >
-                    <span>{item.title}</span>
-                    {activeDropdown === item.title ? (
-                      <ChevronUp size={20} />
-                    ) : (
-                      <ChevronDown size={20} />
-                    )}
-                  </button>
-
-                  <AnimatePresence>
-                    {activeDropdown === item.title && (
-                      <motion.div
-                        className="pl-4 overflow-hidden"
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3 }}
-                      >
-                        {item.items.map((subItem) => (
-                          <motion.a
-                            key={subItem}
-                            href={`#${subItem
-                              .toLowerCase()
-                              .replace(/ /g, "-")}`}
-                            className={`block py-3 text-base ${
-                              subItem === "Request a Quote"
-                                ? "text-blue-600 font-semibold"
-                                : "text-gray-600 hover:text-gray-900"
-                            }`}
-                            initial={{ opacity: 0, x: -10 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.2 }}
-                            onClick={() => setIsMenuOpen(false)}
-                          >
-                            {subItem}
-                          </motion.a>
-                        ))}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              ))}
-
-              <div className="mt-6 pt-6 border-t border-gray-100">
-                <button className="bg-gray-800 text-white px-6 py-3 rounded-md text-base font-medium w-full flex items-center justify-center space-x-2">
-                  <span>Get started</span>
-                  <ArrowRight size={16} />
-                </button>
-              </div>
-            </motion.nav>
-          )}
-        </AnimatePresence>
-      </div>
-    </motion.header>
+      {/* Custom animation */}
+      <style jsx>{`
+        .fade-slide-down {
+          animation: fadeSlideDown 0.3s ease forwards;
+        }
+        @keyframes fadeSlideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
+    </>
   );
 };
 
