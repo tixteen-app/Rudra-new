@@ -528,18 +528,11 @@ const Header: React.FC = () => {
               className="max-w-screen-xl mx-auto px-8 py-6 flex flex-col"
               style={{ height: "auto" }}
             >
-              {/* Heading */}
-              <h2
-                key={`heading-${hoverIdx}`}
-                className="text-2xl font-semibold text-gray-900 text-center mb-4 fade-slide-down"
-              >
-                {navItems[hoverIdx].title}
-              </h2>
-
+           
               {/* Items grid */}
               <ul
                 key={`list-${hoverIdx}`}
-                className="grid grid-cols-3 grid-rows-2 gap-x-8 gap-y-3 justify-items-center flex-1"
+                className="grid grid-cols-3 grid-rows-2 gap-x-8 gap-y-3 justify-items-center flex-1 pt-10"
               >
                 {navItems[hoverIdx].items.map((sub, i) => (
                   <li
@@ -556,6 +549,7 @@ const Header: React.FC = () => {
                     <a
                       href={`#${sub.toLowerCase().replace(/ /g, "-")}`}
                       className="block text-gray-600 hover:text-gray-900 transition-colors text-center text-xl" // Increase font size here
+                        style={{ fontFamily: 'var(--kohinoor-1)' }}
                     >
                       {sub}
                     </a>
@@ -570,10 +564,15 @@ const Header: React.FC = () => {
 
       {/* Header */}
       <header
-        className="w-full bg-white fixed top-0 left-0 right-0 z-50"
-        onMouseLeave={handleMouseLeave}
+        // className="w-full bg-white fixed top-0 left-0 right-0 z-50"
+        // onMouseLeave={handleMouseLeave}
+
+  className={`w-full bg-white fixed top-0 left-0 right-0 z-50 transition-shadow duration-300
+    ${isVisible ? "shadow-[0_1px_1px_rgba(0,0,0,0.1)]" : ""}
+  `}
+  onMouseLeave={handleMouseLeave}
       >
-        <div className="max-w-screen-2xl mx-auto px-6 py-4 flex items-center justify-between relative">
+        <div className="max-w-screen-3xl mx-10 px-6 py-4 flex items-center justify-between relative">
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Image
@@ -600,6 +599,8 @@ const Header: React.FC = () => {
                   px-3 py-2
                 `}
                 type="button"
+                style={{ fontFamily: 'var(--kohinoor-1)' }}
+
               >
                 {item.title}
               </button>
@@ -630,23 +631,23 @@ const Header: React.FC = () => {
             </button>
           </div> */}
           <div className="hidden md:flex items-center gap-8 relative z-50">
-  <Search
-    size={24}
-    className="text-gray-400 hover:text-gray-800 cursor-pointer"
-  />
-  <span className="text-gray-600 text-lg font-medium mx-4">EN</span>
-  <button className="bg-[#3f4249] hover:bg-[#3a3d43] text-white rounded-2xl px-5 py-4 text-lg font-medium flex items-center gap-2 transition-all">
-  Get started <ArrowRight size={24} />
-</button>
-</div>
+            <Search
+              size={24}
+              className="text-gray-400 hover:text-gray-800 cursor-pointer"
+            />
+            <span className="text-gray-600 text-lg font-medium mx-4">EN</span>
+            <button className="bg-[#3f4249] hover:bg-[#3a3d43] text-white rounded-2xl px-5 py-4 text-lg font-medium flex items-center gap-2 transition-all">
+              Get started <ArrowRight size={24} />
+            </button>
+          </div>
         </div>
       </header>
 
       {/* Mobile overlay */}
       <div
         className={`fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-300 ${mobileMenuOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
+          ? "opacity-100 pointer-events-auto"
+          : "opacity-0 pointer-events-none"
           }`}
         onClick={closeMobileMenu}
       ></div>
