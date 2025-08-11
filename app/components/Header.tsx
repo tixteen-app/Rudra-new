@@ -558,7 +558,7 @@ const Header: React.FC = () => {
                     <a
                       href={`#${sub.toLowerCase().replace(/ /g, "-")}`}
                       className="block text-gray-600 hover:text-gray-900 transition-colors text-left text-xl"
-                      style={{ fontFamily: "var(--kohinoor-1)" }}
+                      style={{ fontFamily: "var(--kohinoor-2)" }}
                     >
                       {sub}
                     </a>
@@ -601,7 +601,7 @@ const Header: React.FC = () => {
                     : "text-gray-500"
                 } px-3 py-2`}
                 type="button"
-                style={{ fontFamily: "var(--kohinoor-1)" }}
+                style={{ fontFamily: "var(--kohinoor-2)" }}
               >
                 {item.title}
               </button>
