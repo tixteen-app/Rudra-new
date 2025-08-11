@@ -635,9 +635,9 @@ const Header: React.FC = () => {
     className="text-gray-400 hover:text-gray-800 cursor-pointer"
   />
   <span className="text-gray-600 text-lg font-medium mx-4">EN</span>
-  <button className="bg-[#3f4249] hover:bg-[#3a3d43] text-white rounded-2xl px-4 py-2.5 text-base font-medium flex items-center gap-2 transition-all">
-    Get started <ArrowRight size={22} />
-  </button>
+  <button className="bg-[#3f4249] hover:bg-[#3a3d43] text-white rounded-2xl px-4 py-4 text-lg font-medium flex items-center gap-2 transition-all">
+  Get started <ArrowRight size={24} />
+</button>
 </div>
         </div>
       </header>
