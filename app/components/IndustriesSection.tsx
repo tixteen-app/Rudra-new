@@ -26,26 +26,26 @@ const IndustriesSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-24 bg-white">
+      <div className="max-w-6xl mx-auto px-8">
         {/* Section Title */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-400 font-normal"
-          style={{fontFamily: 'var(--kohinoor-2)' }}
-          
+          <h2 
+            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-semibold"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             We Span Industries & Relish Complex Challenges
           </h2>
         </motion.div>
 
         {/* Industries Grid - Updated with larger images */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {industries.map((industry, index) => (
             <motion.div
               key={industry.name}
@@ -71,7 +71,10 @@ const IndustriesSection: React.FC = () => {
               {/* Content */}
               <div className="absolute inset-0 flex items-end justify-between p-6">
                 {/* Industry Name */}
-                <h3 className="text-white text-xl md:text-2xl lg:text-3xl font-medium">
+                <h3 
+                  className="text-white text-xl md:text-2xl lg:text-3xl font-semibold"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
                   {industry.name}
                 </h3>
 
@@ -96,7 +99,10 @@ const IndustriesSection: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <button className="px-8 py-3 border border-gray-300 text-gray-600 rounded-full hover:border-gray-400 hover:text-gray-700 transition-all duration-300 text-lg lg:px-10 lg:py-4 lg:text-xl">
+          <button 
+            className="px-8 py-3 border border-gray-300 text-gray-700 rounded-full hover:border-gray-400 hover:text-gray-800 transition-all duration-300 text-lg lg:px-10 lg:py-4 lg:text-xl"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
             All Industries
           </button>
         </motion.div>

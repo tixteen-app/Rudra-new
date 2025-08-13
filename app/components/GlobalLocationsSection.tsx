@@ -46,19 +46,22 @@ const GlobalLocationsSection: React.FC = () => {
 
   return (
     <section 
-      className="py-20"
+      className="py-24"
       style={{ backgroundColor: 'rgba(63,66,73,var(--tw-bg-opacity,1))' }}
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-8">
         {/* Section Title */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-300 font-normal">
+          <h2 
+            className="text-3xl md:text-4xl lg:text-5xl text-gray-300 font-semibold"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
+          >
             We Get it Right First Time
           </h2>
         </motion.div>
@@ -80,18 +83,27 @@ const GlobalLocationsSection: React.FC = () => {
               </div>
 
               {/* Award Title */}
-              <h3 className="text-base text-white font-medium mb-2">
+              <h3 
+                className="text-base text-white font-semibold mb-2"
+                style={{ fontFamily: "Montserrat, sans-serif" }}
+              >
                 {award.title}
               </h3>
 
               {/* Company Name */}
-              <p className="text-gray-300 text-sm mb-1">
+              <p 
+                className="text-gray-300 text-sm mb-1 font-medium"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
                 {award.company}
               </p>
 
               {/* Details */}
               {award.details && (
-                <p className="text-gray-400 text-xs">
+                <p 
+                  className="text-gray-400 text-xs font-normal"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
                   {award.details}
                 </p>
               )}

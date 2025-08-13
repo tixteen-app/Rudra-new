@@ -317,8 +317,9 @@ const ProductSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-600 font-normal"
-          style={{color:"#a4b0ae" , fontFamily: 'var(--kohinoor-2)' }}
+          <h2 
+            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-semibold"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             We Deliver instead of "Your Purpose,Our Priority"
           </h2>
@@ -370,20 +371,60 @@ const ProductSection: React.FC = () => {
                     <div className="text-white ">
                       <div className="space-y-3 text-md ">
                         <div>
-                          <p className=" text-lg">Industry</p>
-                          <p className='text-gray-800 ' >{product.industry}</p>
+                          <p 
+                            className="text-lg font-semibold"
+                            style={{ fontFamily: "Montserrat, sans-serif" }}
+                          >
+                            Industry
+                          </p>
+                          <p 
+                            className='text-gray-800 font-normal'
+                            style={{ fontFamily: "Inter, sans-serif" }}
+                          >
+                            {product.industry}
+                          </p>
                         </div> 
                         <div>
-                          <p className=" text-lg">Weight</p>
-                          <p className='text-gray-800 ' >{product.weight}</p>
+                          <p 
+                            className="text-lg font-semibold"
+                            style={{ fontFamily: "Montserrat, sans-serif" }}
+                          >
+                            Weight
+                          </p>
+                          <p 
+                            className='text-gray-800 font-normal'
+                            style={{ fontFamily: "Inter, sans-serif" }}
+                          >
+                            {product.weight}
+                          </p>
                         </div>
                         <div>
-                          <p className=" text-lg">Material</p>
-                          <p className='text-gray-800 '>{product.material}</p>
+                          <p 
+                            className="text-lg font-semibold"
+                            style={{ fontFamily: "Montserrat, sans-serif" }}
+                          >
+                            Material
+                          </p>
+                          <p 
+                            className='text-gray-800 font-normal'
+                            style={{ fontFamily: "Inter, sans-serif" }}
+                          >
+                            {product.material}
+                          </p>
                         </div>
                         <div>
-                          <p className=" text-lg">Focus</p>
-                          <p className='text-gray-800 '>{product.focus}</p>
+                          <p 
+                            className="text-lg font-semibold"
+                            style={{ fontFamily: "Montserrat, sans-serif" }}
+                          >
+                            Focus
+                          </p>
+                          <p 
+                            className='text-gray-800 font-normal'
+                            style={{ fontFamily: "Inter, sans-serif" }}
+                          >
+                            {product.focus}
+                          </p>
                         </div>
                         
                       </div>

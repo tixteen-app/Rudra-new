@@ -21,8 +21,8 @@ const VideoSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-8">
         <motion.div
           className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -43,15 +43,23 @@ const VideoSection: React.FC = () => {
               
               {/* Text container moved up using pt-16 (padding-top) */}
               <motion.div
-                className="absolute inset-0 flex flex-col items-center pt-16 gap-4"
+                className="absolute inset-0 flex flex-col items-center pt-16 gap-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold text-center px-4 max-w-4xl">
+                <h2 
+                  className="text-3xl md:text-4xl lg:text-5xl text-white font-semibold text-center px-4 max-w-4xl"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
                   Delivering Advantage, Not Just Castings
                 </h2>
-                <p className="text-xl text-white/90 font-medium">Value addition to Customers</p>
+                <p 
+                  className="text-xl text-white/90 font-medium"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  Value addition to Customers
+                </p>
               </motion.div>
             </div>
           )}

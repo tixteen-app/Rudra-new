@@ -750,10 +750,10 @@ const Header: React.FC = () => {
                   className="flex flex-col justify-end border border-gray-300 hover:bg-gray-50 rounded-xl p-6 transition-all h-40"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-lg font-medium">
+                    <span className="text-lg font-medium text-gray-300 ">
                       Procurement Information
                     </span>
-                    <ArrowRight size={24} />
+                    <ArrowRight size={24} className="text-gray-300" />
                   </div>
                 </a>
               </div>

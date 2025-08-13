@@ -32,17 +32,20 @@ const StatisticsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-8">
         {/* Section Title */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-400 font-normal">
+          <h2 
+            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-semibold"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
+          >
             We're Backed by Numbers
           </h2>
         </motion.div>
@@ -60,14 +63,17 @@ const StatisticsSection: React.FC = () => {
             >
               {/* Number */}
               <div 
-                className="text-5xl md:text-6xl lg:text-7xl text-green-400 mb-4"
-                style={{ fontFamily: 'kohinoorTexmoBlack, sans-serif' }}
+                className="text-5xl md:text-6xl lg:text-7xl text-green-600 mb-6"
+                style={{ fontFamily: "Montserrat, sans-serif" }}
               >
                 {stat.number}
               </div>
               
               {/* Label */}
-              <p className="text-lg md:text-xl text-gray-500 font-normal">
+              <p 
+                className="text-xl md:text-2xl text-gray-700 font-normal"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
                 {stat.label}
               </p>
             </motion.div>

@@ -39,19 +39,25 @@ const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-24 bg-white">
+      <div className="container mx-auto px-8">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl mb-6 text-gray-900">
+          <h2 
+            className="text-4xl md:text-5xl mb-8 text-gray-800 font-semibold"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
+          >
             Our Capabilities
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p 
+            className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto font-normal"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
             From concept to delivery, we provide comprehensive investment casting 
             solutions tailored to your specific requirements.
           </p>
@@ -74,14 +80,24 @@ const ServicesSection: React.FC = () => {
                 }}
               >
                 <motion.div
-                  className="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center mb-6"
+                  className="w-16 h-16 bg-gray-800 rounded-xl flex items-center justify-center mb-6"
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
                 >
                   <Icon size={32} className="text-white" />
                 </motion.div>
-                <h3 className="text-xl mb-4 text-gray-900">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <h3 
+                  className="text-xl mb-4 text-gray-800 font-semibold"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
+                  {service.title}
+                </h3>
+                <p 
+                  className="text-gray-700 font-normal"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  {service.description}
+                </p>
               </motion.div>
             );
           })}

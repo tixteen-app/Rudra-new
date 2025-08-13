@@ -426,12 +426,17 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Country */}
-                <h3 className="text-lg font-medium mb-4">{location.country}</h3>
+                <h3 
+                  className="text-lg font-semibold mb-4"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
+                  {location.country}
+                </h3>
 
                 {/* Contact Info */}
                 <div className="space-y-2 text-sm text-gray-300">
-                  <p>{location.phone}</p>
-                  <p className="break-all">{location.email}</p>
+                  <p style={{ fontFamily: "Inter, sans-serif" }}>{location.phone}</p>
+                  <p className="break-all" style={{ fontFamily: "Inter, sans-serif" }}>{location.email}</p>
                 </div>
               </motion.div>
             ))}
@@ -445,11 +450,16 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-lg font-medium mb-4">Rudra Castings</h3>
+            <h3 
+              className="text-lg font-semibold mb-4"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
+              Rudra Castings
+            </h3>
             <div className="space-y-2 text-sm text-gray-300">
-              <p>info@rudracastings.com</p>
-              <p>+919524200019</p>
-              <p>Peer Gajju Shah Road, Badinpur, Mandi Gobindgarh 147301</p>
+              <p style={{ fontFamily: "Inter, sans-serif" }}>info@rudracastings.com</p>
+              <p style={{ fontFamily: "Inter, sans-serif" }}>+919524200019</p>
+              <p style={{ fontFamily: "Inter, sans-serif" }}>Peer Gajju Shah Road, Badinpur, Mandi Gobindgarh 147301</p>
             </div>
           </motion.div>
 
@@ -489,6 +499,7 @@ const Footer: React.FC = () => {
                   <a
                     href="#"
                     className="hover:text-white transition-colors duration-300"
+                    style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     {link}
                   </a>

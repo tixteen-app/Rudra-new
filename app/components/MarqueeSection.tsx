@@ -6,18 +6,25 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const MarqueeSection: React.FC = () => {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-5">
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-8">
         <motion.div
-          className="max-w-6xl mx-auto text-center space-y-8"  
+          className="max-w-6xl mx-auto text-center space-y-12"  
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
+          <h2
+            className="text-3xl md:text-5xl text-gray-800 leading-tight font-semibold mb-8"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
+          >
+            Precision Investment Castings
+          </h2>
+
           <p
-            className="text-xl md:text-3xl text-gray-600 leading-relaxed font-normal"
-            style={{ fontFamily: "var(--kohinoor-2)" }}
+            className="text-xl md:text-2xl text-gray-700 leading-relaxed font-normal"
+            style={{ fontFamily: "Inter, sans-serif" }}
           >
             Since 2008, Rudra Castings has grown from a humble beginning into a
             trusted manufacturer of precision Investment Castings — serving
@@ -26,8 +33,8 @@ const MarqueeSection: React.FC = () => {
           </p>
 
           <p
-            className="text-xl md:text-3xl text-gray-600 leading-relaxed font-normal"
-            style={{ fontFamily: "var(--kohinoor-2)" }}
+            className="text-xl md:text-2xl text-gray-700 leading-relaxed font-normal"
+            style={{ fontFamily: "Inter, sans-serif" }}
           >
             Operating from our 75,000 sq. ft., ISO-certified facility in Punjab,
             we produce long-lifespan steel, aluminium and nickel-based castings,

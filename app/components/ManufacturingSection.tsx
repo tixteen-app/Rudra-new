@@ -5,8 +5,8 @@ import { motion } from 'motion/react';
 
 const ManufacturingSection: React.FC = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-24 bg-white">
+      <div className="container mx-auto px-8">
         <motion.div
           className="max-w-4xl mx-auto text-center"
           initial={{ opacity: 0, y: 50 }}
@@ -14,7 +14,10 @@ const ManufacturingSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+          <p 
+            className="text-xl md:text-2xl text-gray-700 leading-relaxed font-normal"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
             We proudly manufacture long-lifespan steel, aluminium, cobalt and nickel based 
             precision castings in air and vacuum at our state-of-the-art factories in 
             North America, Europe and Asia.

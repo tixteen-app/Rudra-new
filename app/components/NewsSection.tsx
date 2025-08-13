@@ -27,27 +27,30 @@ const NewsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-8">
         {/* Section Title */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-400 font-normal">
+          <h2 
+            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-semibold"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
+          >
             Latest News Articles
           </h2>
         </motion.div>
 
         {/* News Articles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {newsArticles.map((article, index) => (
             <motion.div
               key={article.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer"
+              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer border border-gray-100"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -64,14 +67,20 @@ const NewsSection: React.FC = () => {
               </div>
 
               {/* Article Content */}
-              <div className="p-6">
+              <div className="p-8">
                 {/* Date */}
-                <p className="text-gray-500 text-sm mb-3">
+                <p 
+                  className="text-gray-600 text-sm mb-4 font-medium"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
                   {article.date}
                 </p>
 
                 {/* Title */}
-                <h3 className="text-gray-800 text-lg font-medium leading-tight">
+                <h3 
+                  className="text-gray-800 text-lg font-semibold leading-tight"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
                   {article.title}
                 </h3>
               </div>
@@ -87,7 +96,10 @@ const NewsSection: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <button className="px-8 py-3 border border-gray-300 text-gray-600 rounded-full hover:border-gray-400 hover:text-gray-700 transition-all duration-300">
+          <button 
+            className="px-8 py-3 border border-gray-300 text-gray-700 rounded-full hover:border-gray-400 hover:text-gray-800 transition-all duration-300 font-medium"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
             View All News
           </button>
         </motion.div>
