@@ -19,7 +19,7 @@ const MarqueeSection: React.FC = () => {
             className="text-3xl md:text-5xl text-gray-800 leading-tight font-semibold mb-8"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
-            Precision Investment Castings
+            Crafted in India. Trusted for Precision.
           </h2>
 
           <p
