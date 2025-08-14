@@ -1002,7 +1002,7 @@ const Header: React.FC = () => {
       {/* Desktop Mega Menu */}
       {hoverIdx !== null && (
         <div
-          className="fixed inset-x-0 top-[72px] z-30 hidden md:block"
+          className="fixed inset-x-0 top-[100px] z-30 hidden md:block"
           onMouseEnter={() =>
             timeoutRef.current && clearTimeout(timeoutRef.current)
           }
