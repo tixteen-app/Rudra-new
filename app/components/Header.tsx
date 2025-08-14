@@ -906,7 +906,7 @@ const useResponsiveX = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1700) {
-        setXValue("430%");
+        setXValue("450%");
       } else if (window.innerWidth >= 1400) {
         setXValue("360%");
       } else if (window.innerWidth >= 1024) {
@@ -1007,6 +1007,7 @@ const Header: React.FC = () => {
             timeoutRef.current && clearTimeout(timeoutRef.current)
           }
           onMouseLeave={handleMouseLeave}
+          style={{zIndex: 1000}}
         >
           <div
             className="w-full border-t border-gray-100 bg-white shadow-lg overflow-hidden transition-all ease-in-out"
