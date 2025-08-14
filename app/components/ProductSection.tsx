@@ -306,9 +306,10 @@ const ProductSection: React.FC = () => {
       }
     }
   };
- return (
+
+  return (
     <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1750px]  mx-auto px-4 xl:px-24">
         {/* Section Title */}
         <motion.div
           className="text-center mb-16"
@@ -326,7 +327,7 @@ const ProductSection: React.FC = () => {
         </motion.div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10 xl:gap-12">
           {products.map((product, index) => (
             <motion.div
               key={product.id}
@@ -426,11 +427,7 @@ const ProductSection: React.FC = () => {
                             {product.focus}
                           </p>
                         </div>
-                        
                       </div>
-                      
-                      
-                     
                     </div>
                   </div>
                 )}

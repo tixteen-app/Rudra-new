@@ -118,14 +118,14 @@ const Footer: React.FC = () => {
           loop
           playsInline
           className="w-full h-full object-cover"
-          style={{ opacity: 1.0 }}
+          style={{ opacity: 0.8 }}
         >
           <source
             src="https://pitamaas-media.s3.eu-north-1.amazonaws.com/original/1755153049058_0_Glow_Ray_3840x2160+%281%29+%281%29+%281%29.mp4"
              type="video/mp4"
           />
         </video>
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/10" />
       </div>
 
       {/* Content */}
@@ -153,48 +153,7 @@ const Footer: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Global Locations */}
-          <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 mb-20 md:mb-24"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            {locations.map((location, index) => (
-              <motion.div
-                key={location.country}
-                className="text-center"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                {/* Clock and Time */}
-                <div className="flex items-center justify-center mb-6">
-                  <div className="w-12 h-12 rounded-full border border-gray-400 flex items-center justify-center mr-3">
-                    <Clock size={20} className="text-gray-300" />
-                  </div>
-                  <span className="text-lg font-mono">{location.time}</span>
-                </div>
-
-                {/* Country */}
-                <h3 
-                  className="text-lg font-semibold mb-4"
-                  style={{ fontFamily: "Montserrat, sans-serif" }}
-                >
-                  {location.country}
-                </h3>
-
-                {/* Contact Info */}
-                <div className="space-y-2 text-sm text-gray-300">
-                  <p style={{ fontFamily: "Inter, sans-serif" }}>{location.phone}</p>
-                  <p className="break-all" style={{ fontFamily: "Inter, sans-serif" }}>{location.email}</p>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-
+      
           {/* Rudra Castings Information */}
           <motion.div
             className="text-center mb-12"

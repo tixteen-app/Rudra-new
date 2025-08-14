@@ -1107,7 +1107,7 @@ const Header: React.FC = () => {
                   ? { opacity: 1, y: 0, x: 0, scale: 1 }
                   : { opacity: 1, y: 200, x: responsiveX, scale: 1.8 }
             }
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <Image
               src="/Rudra-Logo.png"
@@ -1119,7 +1119,7 @@ const Header: React.FC = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex flex-1 justify-center mx-12 gap-1 relative z-50 [@media(min-width:1600px)]:ps-10 ">
+          <nav className="hidden md:flex flex-1 justify-center mx-12 gap-1 relative z-50 [@media(min-width:1600px)]:ps-30  ">
             {navItems.map((item, idx) => (
               <button
                 key={item.title}
