@@ -1096,7 +1096,7 @@ const Header: React.FC = () => {
         }`}
         onMouseLeave={handleMouseLeave}
       >
-        <div className="max-w-screen-3xl mx-10 px-6 py-4 flex items-center justify-between relative">
+        <div className="max-w-screen-3xl mx-10 px-6 py-4 flex items-center justify-between relative ">
           {/* Logo - Animated only on scroll */}
           <motion.div className="flex items-center gap-2"
             initial={{ opacity: 1, y: 200, x: responsiveX, scale: 1.8 }}
@@ -1119,7 +1119,7 @@ const Header: React.FC = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex flex-1 justify-center mx-12 gap-1 relative z-50">
+          <nav className="hidden md:flex flex-1 justify-center mx-12 gap-1 relative z-50 [@media(min-width:1600px)]:ps-10 ">
             {navItems.map((item, idx) => (
               <button
                 key={item.title}
