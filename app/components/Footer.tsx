@@ -121,11 +121,11 @@ const Footer: React.FC = () => {
           style={{ opacity: 1.0 }}
         >
           <source
-            src="https://pitamaas-media.s3.eu-north-1.amazonaws.com/original/1755150400604_0_Glow_Ray_3840x2160+%281%29+%281%29.mp4"
+            src="https://pitamaas-media.s3.eu-north-1.amazonaws.com/original/1755153049058_0_Glow_Ray_3840x2160+%281%29+%281%29+%281%29.mp4"
              type="video/mp4"
           />
         </video>
-        <div className="absolute inset-0 bg-black/10" />
+        <div className="absolute inset-0 bg-black/20" />
       </div>
 
       {/* Content */}
