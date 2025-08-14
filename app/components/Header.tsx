@@ -1,4 +1,3 @@
-
 // // "use client";
 
 // // import React, { useState, useRef, useEffect } from "react";
@@ -403,7 +402,6 @@
 
 // // export default Header;
 
-
 // "use client";
 
 // import React, { useState, useRef, useEffect } from "react";
@@ -493,10 +491,9 @@
 //   const [mobileOpenIndices, setMobileOpenIndices] = useState<number[]>([]);
 //   const [xValue, setXValue] = useState("330%");
 
-  
 //   // Scroll detection
 //   const { scrollY } = useScroll();
-  
+
 //   useMotionValueEvent(scrollY, "change", (latest) => {
 //     if (latest > 10) {
 //       setHasScrolled(true);
@@ -540,7 +537,6 @@
 //     setMobileMenuOpen(false);
 //     setMobileOpenIndices([]);
 //   };
-  
 
 //   return (
 //     <>
@@ -657,9 +653,9 @@
 //           <motion.div className="flex items-center gap-2"
 //             initial={{ opacity: 1, y: 200, x: "330%", scale: 1.8 }}
 //             animate={
-//               isInitialLoad 
+//               isInitialLoad
 //                 ? { opacity: 1, y: 200, x: "330%", scale: 1.8 }
-//                 : hasScrolled 
+//                 : hasScrolled
 //                   ? { opacity: 1, y: 0, x: 0, scale: 1 }
 //                   : { opacity: 1, y: 200, x: "330%", scale: 1.8 }
 //             }
@@ -824,13 +820,12 @@
 
 // export default Header;
 
-
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
 import { Search, ArrowRight, Menu, X } from "lucide-react";
 import Image from "next/image";
-import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 const navItems = [
   {
@@ -902,7 +897,7 @@ const navItems = [
 
 const useResponsiveX = () => {
   const [xValue, setXValue] = useState("330%");
-  
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1700) {
@@ -915,12 +910,12 @@ const useResponsiveX = () => {
         setXValue("30%");
       }
     };
-    
+
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
-  
+
   return xValue;
 };
 
@@ -937,10 +932,10 @@ const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileOpenIndices, setMobileOpenIndices] = useState<number[]>([]);
   const responsiveX = useResponsiveX();
-  
+
   // Scroll detection
   const { scrollY } = useScroll();
-  
+
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (latest > 10) {
       setHasScrolled(true);
@@ -1007,7 +1002,7 @@ const Header: React.FC = () => {
             timeoutRef.current && clearTimeout(timeoutRef.current)
           }
           onMouseLeave={handleMouseLeave}
-          style={{zIndex: 1000}}
+          style={{ zIndex: 1000 }}
         >
           <div
             className="w-full border-t border-gray-100 bg-white shadow-lg overflow-hidden transition-all ease-in-out"
@@ -1026,14 +1021,21 @@ const Header: React.FC = () => {
           >
             <div
               ref={contentRef}
-              className="max-w-screen-xxl mx-auto px-8 py-10 flex flex-row justify-center items-center"
+              // className="max-w-screen-xxl mx-auto px-8 py-10 flex flex-row justify-center items-center bg-black ms-15"
+              // className="max-w-screen-xxl mx-auto px-8 py-10 flex flex-row justify-center items-center bg-black ms-[15px] 2xl:ms-20px]"
+              className="max-w-screen-xxl mx-auto px-8 py-10 flex flex-row justify-center items-center ms-[15px] 2xl:ms-[35px]"
+
               style={{ height: "100%" }}
             >
               {/* Left Side Menu - Centered */}
               <ul
                 key={`list-${hoverIdx}`}
-                className="grid grid-rows-4 grid-flow-col gap-x-12 gap-y-3 flex-1  ms-25"
-                style={{ alignSelf: "center", justifyContent: "center", gap: "20px" }}
+                className="grid grid-rows-4 grid-flow-col gap-x-12 gap-y-3 flex-1 ms-14 "
+                style={{
+                  alignSelf: "center",
+                  justifyContent: "center",
+                  gap: "20px",
+                }}
               >
                 {navItems[hoverIdx].items.map((sub, i) => (
                   <li
@@ -1042,7 +1044,9 @@ const Header: React.FC = () => {
                     style={{
                       transitionDelay: `${i * 60}ms`,
                       opacity: isVisible ? 1 : 0,
-                      transform: isVisible ? "translateY(0)" : "translateY(12px)",
+                      transform: isVisible
+                        ? "translateY(0)"
+                        : "translateY(12px)",
                     }}
                   >
                     <a
@@ -1098,14 +1102,15 @@ const Header: React.FC = () => {
       >
         <div className="max-w-screen-3xl mx-10 px-6 py-4 flex items-center justify-between relative ">
           {/* Logo - Animated only on scroll */}
-          <motion.div className="flex items-center gap-2"
+          <motion.div
+            className="flex items-center gap-2"
             initial={{ opacity: 1, y: 200, x: responsiveX, scale: 1.8 }}
             animate={
-              isInitialLoad 
+              isInitialLoad
                 ? { opacity: 1, y: 200, x: responsiveX, scale: 1.8 }
-                : hasScrolled 
-                  ? { opacity: 1, y: 0, x: 0, scale: 1 }
-                  : { opacity: 1, y: 200, x: responsiveX, scale: 1.8 }
+                : hasScrolled
+                ? { opacity: 1, y: 0, x: 0, scale: 1 }
+                : { opacity: 1, y: 200, x: responsiveX, scale: 1.8 }
             }
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
@@ -1202,7 +1207,10 @@ const Header: React.FC = () => {
           {navItems.map((section, idx) => {
             const isOpen = mobileOpenIndices.includes(idx);
             return (
-              <div key={section.title} className="mb-4 border-b border-gray-200">
+              <div
+                key={section.title}
+                className="mb-4 border-b border-gray-200"
+              >
                 <button
                   type="button"
                   onClick={() => toggleMobileAccordion(idx)}
