@@ -22,7 +22,7 @@ const VideoSection: React.FC = () => {
 
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-8xl mx-auto px-20">
         <motion.div
           className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl"
           initial={{ opacity: 0, scale: 0.95 }}

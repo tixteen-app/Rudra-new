@@ -1032,13 +1032,13 @@ const Header: React.FC = () => {
               {/* Left Side Menu - Centered */}
               <ul
                 key={`list-${hoverIdx}`}
-                className="grid grid-rows-4 grid-flow-col gap-x-12 gap-y-3 flex-1"
+                className="grid grid-rows-4 grid-flow-col gap-x-12 gap-y-3 flex-1  ms-25"
                 style={{ alignSelf: "center", justifyContent: "center", gap: "20px" }}
               >
                 {navItems[hoverIdx].items.map((sub, i) => (
                   <li
                     key={i}
-                    className="transition-all duration-300 ease-out py-4 px-10"
+                    className="transition-all duration-300 ease-out py-4 px-10 "
                     style={{
                       transitionDelay: `${i * 60}ms`,
                       opacity: isVisible ? 1 : 0,
