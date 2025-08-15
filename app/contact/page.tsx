@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <HeroSection heading="Industries"  />
+      <HeroSection heading="Contact"  />
       <Contectdetails />
       <ContactForm/>
 
