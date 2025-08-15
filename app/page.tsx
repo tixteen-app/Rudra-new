@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <HeroSection />
+      <HeroSection heading="Empowering Precision" message="Since 2008" />
       <MarqueeSection />
       <VideoSection />
       <ProductSection />

@@ -22,7 +22,7 @@ const VideoSection: React.FC = () => {
 
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-8xl mx-auto px-20">
+      <div className="max-w-8xl mx-auto px-30">
         <motion.div
           className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -43,7 +43,7 @@ const VideoSection: React.FC = () => {
               
               {/* Text container moved up using pt-16 (padding-top) */}
               <motion.div
-                className="absolute inset-0 flex flex-col items-center pt-16 gap-6"
+                className="absolute inset-0 flex flex-col items-center justify-end  pb-45 pt-16 gap-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}

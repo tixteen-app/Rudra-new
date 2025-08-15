@@ -3,7 +3,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+  heading: string;
+  message?: string;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ heading, message }) => {
   return (
     <motion.section className="min-h-screen flex items-center justify-center bg-white pt-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
@@ -16,20 +21,20 @@ const HeroSection: React.FC = () => {
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-[#3f4249] mb-4 leading-tight font-normal tracking-tight"
             style={{ fontFamily: 'var(--kohinoor-3)' }}
           >
-            Empowering Precision
+            {heading}
           </h1>
 
-         
-
-          <motion.p
-            className="text-xl sm:text-2xl md:text-4xl text-[#3f4249] font-normal "
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            style={{ fontFamily: 'var(--kohinoor-3)' }}
-          >
-            Since 2008
-          </motion.p>
+          {message && (
+            <motion.p
+              className="text-xl sm:text-2xl md:text-4xl text-[#3f4249] font-normal"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              style={{ fontFamily: 'var(--kohinoor-3)' }}
+            >
+              {message}
+            </motion.p>
+          )}
         </motion.div>
       </div>
     </motion.section>

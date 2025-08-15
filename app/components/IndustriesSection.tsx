@@ -27,7 +27,7 @@ const IndustriesSection: React.FC = () => {
 
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-9xl mx-auto px-8">
+      <div className="max-w-8xl mx-auto px-20">
         {/* Section Title */}
         <motion.div
           className="text-center mb-20"
