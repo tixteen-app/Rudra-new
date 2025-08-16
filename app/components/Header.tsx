@@ -213,7 +213,7 @@ const Header: React.FC = () => {
               {/* Left Side Menu - Centered */}
               <ul
                 key={`list-${hoverIdx}`}
-                className="grid grid-rows-4 grid-flow-col gap-x-12 gap-y-3 flex-1 ms-14 ps-40"
+                className="grid grid-rows-4 grid-flow-col gap-x-12 gap-y-3 flex-1 ms-14 ps-35"
                 style={{
                   alignSelf: "center",
                   justifyContent: "center",
