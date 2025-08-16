@@ -10,7 +10,7 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 const navItems = [
   {
     title: "Solutions",
-    href: "/solutions",
+    href: "/",
     items: [
       { name: "Investment Casting Process", href: "/solutions/investment-casting" },
       { name: "Machining & Finishing", href: "/solutions/machining-finishing" },
@@ -207,13 +207,13 @@ const Header: React.FC = () => {
           >
             <div
               ref={contentRef}
-              className="max-w-screen-xxl mx-auto px-8 py-10 flex flex-row justify-center items-center ms-[15px] 2xl:ms-[35px]"
+              className="max-w-screen-xxl mx-auto px-8 py-10 flex flex-row justify-center items-center ms-[15px] 2xl:ms-[45px]  "
               style={{ height: "100%" }}
             >
               {/* Left Side Menu - Centered */}
               <ul
                 key={`list-${hoverIdx}`}
-                className="grid grid-rows-4 grid-flow-col gap-x-12 gap-y-3 flex-1 ms-14"
+                className="grid grid-rows-4 grid-flow-col gap-x-12 gap-y-3 flex-1 ms-14 ps-40"
                 style={{
                   alignSelf: "center",
                   justifyContent: "center",
@@ -223,7 +223,7 @@ const Header: React.FC = () => {
                 {navItems[hoverIdx].items.map((sub, i) => (
                   <li
                     key={i}
-                    className="transition-all duration-300 ease-out py-4 px-10"
+                    className="transition-all duration-300 ease-out py-4 px-10 "
                     style={{
                       transitionDelay: `${i * 60}ms`,
                       opacity: isVisible ? 1 : 0,
