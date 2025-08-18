@@ -5,6 +5,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import LeftSidebar from "@/app/components/LeftSidebar";
 import RightSidebar from "@/app/components/RightSidebar";
+import FAQSection from "@/app/components/FAQSection";
+import { warehousingFAQs } from "@/app/components/data/faqs";
 
 const Materials: React.FC = () => {
   // Define sections for right sidebar navigation
@@ -13,6 +15,8 @@ const Materials: React.FC = () => {
     { name: "Alloy Capabilities", anchor: "#alloys" },
     { name: "Assembly Services", anchor: "#assembly" },
     { name: "Testing Capabilities", anchor: "#testing" },
+        { name: "FAQs", anchor: "#faqs" },
+
   ];
 
   // Animation variants
@@ -336,6 +340,8 @@ const Materials: React.FC = () => {
               </motion.div>
             </motion.div>
           </motion.section>
+          <FAQSection faqs={warehousingFAQs} />
+
         </div>
       </main>
 

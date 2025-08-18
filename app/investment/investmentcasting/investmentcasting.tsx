@@ -5,6 +5,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import LeftSidebar from "@/app/components/LeftSidebar";
 import RightSidebar from "@/app/components/RightSidebar";
+import FAQSection from "@/app/components/FAQSection";
+import { warehousingFAQs } from "@/app/components/data/faqs";
 
 const Invesmentcasting: React.FC = () => {
   // Define sections for right sidebar navigation
@@ -15,6 +17,8 @@ const Invesmentcasting: React.FC = () => {
     { name: "Roll-Over Pouring", anchor: "#roll-over" },
     { name: "Low-Pressure Aluminum Casting", anchor: "#low-pressure" },
     { name: "Why These Methods Matter", anchor: "#benefits" },
+        { name: "FAQs", anchor: "#faqs" },
+
   ];
 
   // Animation variants
@@ -228,6 +232,8 @@ const Invesmentcasting: React.FC = () => {
               </motion.div>
             </motion.div>
           </motion.section>
+                    <FAQSection faqs={warehousingFAQs} />
+
         </div>
       </main>
 

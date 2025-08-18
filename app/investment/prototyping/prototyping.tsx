@@ -5,6 +5,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import LeftSidebar from "@/app/components/LeftSidebar";
 import RightSidebar from "@/app/components/RightSidebar";
+import FAQSection from "@/app/components/FAQSection";
+import { warehousingFAQs } from "@/app/components/data/faqs";
 
 const Prototyping: React.FC = () => {
   // Define sections for right sidebar navigation
@@ -14,6 +16,8 @@ const Prototyping: React.FC = () => {
     { name: "Wax Die Prototyping", anchor: "#wax-die" },
     { name: "Machined Prototypes", anchor: "#machined" },
     { name: "Which Option Is Right?", anchor: "#comparison" },
+    { name: "FAQs", anchor: "#faqs" },
+
   ];
 
   // Animation variants
@@ -300,6 +304,8 @@ const Prototyping: React.FC = () => {
               Get in touch to explore the best way to bring your component from idea to reality.
             </motion.p>
           </motion.section>
+          <FAQSection faqs={warehousingFAQs} />
+
         </div>
       </main>
 

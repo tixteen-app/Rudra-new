@@ -58,7 +58,7 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({ heading, message }) => {
   return (
     <motion.section className="min-h-screen flex items-center justify-center bg-white pt-28 px-6 sm:px-8">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-9xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}

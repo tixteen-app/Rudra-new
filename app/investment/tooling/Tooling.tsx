@@ -5,6 +5,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import LeftSidebar from "@/app/components/LeftSidebar";
 import RightSidebar from "@/app/components/RightSidebar";
+import FAQSection from "@/app/components/FAQSection";
+import { warehousingFAQs } from "@/app/components/data/faqs";
 
 const Tooling: React.FC = () => {
   // Define sections for right sidebar navigation
@@ -15,6 +17,8 @@ const Tooling: React.FC = () => {
     { name: "Specialized Operations", anchor: "#specialized" },
     { name: "What Sets Us Apart", anchor: "#advantages" },
     { name: "In-House Tooling", anchor: "#in-house" },
+    { name: "FAQs", anchor: "#faqs" },
+
   ];
 
   // Animation variants
@@ -295,6 +299,8 @@ const Tooling: React.FC = () => {
               Whether it's for high-volume production or development of critical components, our tooling capability enhances flexibility, reduces downtime, and helps us deliver with unmatched efficiency.
             </motion.p>
           </motion.section>
+                    <FAQSection faqs={warehousingFAQs} />
+          
         </div>
       </main>
 
