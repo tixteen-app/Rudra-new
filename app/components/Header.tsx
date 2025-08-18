@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
@@ -81,19 +80,24 @@ const navItems = [
   },
 ];
 
-const useResponsiveX = () => {
+const useResponsiveValues = () => {
   const [xValue, setXValue] = useState("330%");
+  const [spadding, setSpadding] = useState("10px");
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1700) {
-        setXValue("450%");
+        setXValue("400%");
+        setSpadding("50px");
       } else if (window.innerWidth >= 1400) {
-        setXValue("360%");
+        setXValue("330%");
+        setSpadding("8px");
       } else if (window.innerWidth >= 1024) {
-        setXValue("300%");
+        setXValue("240%");
+        setSpadding("20px");
       } else {
         setXValue("30%");
+        setSpadding("10px");
       }
     };
 
@@ -102,7 +106,7 @@ const useResponsiveX = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return xValue;
+  return { xValue, spadding };
 };
 
 const Header: React.FC = () => {
@@ -117,7 +121,7 @@ const Header: React.FC = () => {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileOpenIndices, setMobileOpenIndices] = useState<number[]>([]);
-  const responsiveX = useResponsiveX();
+  const { xValue, spadding } = useResponsiveValues();
 
   // Scroll detection
   const { scrollY } = useScroll();
@@ -207,23 +211,24 @@ const Header: React.FC = () => {
           >
             <div
               ref={contentRef}
-              className="max-w-screen-xxl mx-auto px-8 py-10 flex flex-row justify-center items-center ms-[15px] 2xl:ms-[45px]  "
+              className="max-w-screen-xxl mx-auto px-8 py-10 flex flex-row justify-center items-center ms-[15px] 2xl:ms-[45px]"
               style={{ height: "100%" }}
             >
               {/* Left Side Menu - Centered */}
               <ul
                 key={`list-${hoverIdx}`}
-                className="grid grid-rows-4 grid-flow-col gap-x-12 gap-y-3 flex-1 ms-14 ps-35"
+                className={`grid grid-rows-4 grid-flow-col gap-x-12 gap-y-3 flex-1 ms-14`}
                 style={{
                   alignSelf: "center",
                   justifyContent: "center",
                   gap: "20px",
+                  paddingLeft: spadding,
                 }}
               >
                 {navItems[hoverIdx].items.map((sub, i) => (
                   <li
                     key={i}
-                    className="transition-all duration-300 ease-out py-4 px-10 "
+                    className="transition-all duration-300 ease-out py-4 px-10"
                     style={{
                       transitionDelay: `${i * 60}ms`,
                       opacity: isVisible ? 1 : 0,
@@ -287,13 +292,13 @@ const Header: React.FC = () => {
           {/* Logo - Animated only on scroll */}
           <motion.div
             className="flex items-center gap-2"
-            initial={{ opacity: 1, y: 200, x: responsiveX, scale: 1.8 }}
+            initial={{ opacity: 1, y: 200, x: xValue, scale: 1.8 }}
             animate={
               isInitialLoad
-                ? { opacity: 1, y: 200, x: responsiveX, scale: 1.8 }
+                ? { opacity: 1, y: 200, x: xValue, scale: 1.8 }
                 : hasScrolled
                 ? { opacity: 1, y: 0, x: 0, scale: 1 }
-                : { opacity: 1, y: 200, x: responsiveX, scale: 1.8 }
+                : { opacity: 1, y: 200, x: xValue, scale: 1.8 }
             }
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
