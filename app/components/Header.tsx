@@ -187,7 +187,7 @@ const Header: React.FC = () => {
       {/* Desktop Mega Menu */}
       {hoverIdx !== null && (
         <div
-          className="fixed inset-x-0 top-[100px] z-30 hidden md:block"
+          className="fixed inset-x-0 top-[80px] z-30 hidden md:block"
           onMouseEnter={() =>
             timeoutRef.current && clearTimeout(timeoutRef.current)
           }
@@ -290,7 +290,7 @@ const Header: React.FC = () => {
       >
         <div className="max-w-screen-3xl mx-10 px-6 py-4 flex items-center justify-between relative">
           {/* Logo - Animated only on scroll */}
-          <motion.div
+          {/* <motion.div
             className="flex items-center gap-2"
             initial={{ opacity: 1, y: 200, x: xValue, scale: 1.8 }}
             animate={
@@ -311,7 +311,30 @@ const Header: React.FC = () => {
                 priority
               />
             </Link>
-          </motion.div>
+          </motion.div> */}
+{/* Logo - Animated only on scroll */}
+<motion.div
+  className="flex items-center gap-2 absolute left-1/2 -translate-x-1/2"
+  initial={{ opacity: 1, y: 200, scale: 1.8 }}
+  animate={
+    isInitialLoad
+      ? { opacity: 1, y: 200, scale: 1.8 }
+      : hasScrolled
+      ? { opacity: 1, y: 0, x: 120, scale: 1, left: "0%", translateX: "0%" }
+      : { opacity: 1, y: 200, scale: 1.8 }
+  }
+  transition={{ duration: 0.6, ease: "easeOut" }}
+>
+  <Link href="/">
+    <Image
+      src="/Rudra-Logo.png"
+      alt="Rudra Logo"
+      width={180}
+      height={45}
+      priority
+    />
+  </Link>
+</motion.div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex flex-1 justify-center mx-12 gap-1 relative z-50 [@media(min-width:1600px)]:ps-30">
