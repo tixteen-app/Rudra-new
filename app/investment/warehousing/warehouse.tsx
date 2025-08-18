@@ -161,7 +161,7 @@
 //           >
 //             <motion.h1
 //               variants={itemVariants}
-//               className="text-3xl font-bold mb-8 text-gray-800"
+//               className="text-3xl font-normal mb-8 text-gray-800"
 //               style={{ fontFamily: "Montserrat, sans-serif" }}
 //             >
 //               🚚 Warehousing & Distribution Solutions
@@ -214,7 +214,7 @@
 //           >
 //             <motion.h2
 //               variants={itemVariants}
-//               className="text-2xl font-bold mb-8 text-gray-800"
+//               className="text-2xl font-normal mb-8 text-gray-800"
 //               style={{ fontFamily: "Montserrat, sans-serif" }}
 //             >
 //               🏢 What You Need, When You Need It
@@ -239,7 +239,7 @@
 //                 className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500"
 //               >
 //                 <h3
-//                   className="text-xl font-semibold mb-3 text-gray-800"
+//                   className="text-xl font-normal mb-3 text-gray-800"
 //                   style={{ fontFamily: "Montserrat, sans-serif" }}
 //                 >
 //                   On-demand Dispatch
@@ -258,7 +258,7 @@
 //                 className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500"
 //               >
 //                 <h3
-//                   className="text-xl font-semibold mb-3 text-gray-800"
+//                   className="text-xl font-normal mb-3 text-gray-800"
 //                   style={{ fontFamily: "Montserrat, sans-serif" }}
 //                 >
 //                   Strategic Storage
@@ -277,7 +277,7 @@
 //                 className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500"
 //               >
 //                 <h3
-//                   className="text-xl font-semibold mb-3 text-gray-800"
+//                   className="text-xl font-normal mb-3 text-gray-800"
 //                   style={{ fontFamily: "Montserrat, sans-serif" }}
 //                 >
 //                   Inventory Management
@@ -296,7 +296,7 @@
 //                 className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500"
 //               >
 //                 <h3
-//                   className="text-xl font-semibold mb-3 text-gray-800"
+//                   className="text-xl font-normal mb-3 text-gray-800"
 //                   style={{ fontFamily: "Montserrat, sans-serif" }}
 //                 >
 //                   Dedicated Team
@@ -336,7 +336,7 @@
 //           >
 //             <motion.h2
 //               variants={itemVariants}
-//               className="text-2xl font-bold mb-8 text-gray-800"
+//               className="text-2xl font-normal mb-8 text-gray-800"
 //               style={{ fontFamily: "Montserrat, sans-serif" }}
 //             >
 //               Our Distribution Advantages
@@ -352,7 +352,7 @@
 //               >
 //                 <div className="text-blue-600 text-2xl mb-3">🌐</div>
 //                 <h3
-//                   className="text-xl font-semibold mb-3 text-gray-800"
+//                   className="text-xl font-normal mb-3 text-gray-800"
 //                   style={{ fontFamily: "Montserrat, sans-serif" }}
 //                 >
 //                   Global Network
@@ -372,7 +372,7 @@
 //               >
 //                 <div className="text-green-600 text-2xl mb-3">⏱️</div>
 //                 <h3
-//                   className="text-xl font-semibold mb-3 text-gray-800"
+//                   className="text-xl font-normal mb-3 text-gray-800"
 //                   style={{ fontFamily: "Montserrat, sans-serif" }}
 //                 >
 //                   Reduced Lead Times
@@ -391,7 +391,7 @@
 //               >
 //                 <div className="text-purple-600 text-2xl mb-3">🔄</div>
 //                 <h3
-//                   className="text-xl font-semibold mb-3 text-gray-800"
+//                   className="text-xl font-normal mb-3 text-gray-800"
 //                   style={{ fontFamily: "Montserrat, sans-serif" }}
 //                 >
 //                   Flexible Solutions
@@ -417,7 +417,7 @@
 //           >
 //             <motion.h2
 //               variants={itemVariants}
-//               className="text-2xl font-bold mb-8 text-gray-800"
+//               className="text-2xl font-normal mb-8 text-gray-800"
 //               style={{ fontFamily: "Montserrat, sans-serif" }}
 //             >
 //               Frequently Asked Questions (FAQs)
@@ -587,7 +587,7 @@ const Warehousing: React.FC = () => {
           >
             <motion.h1
               variants={itemVariants}
-              className="text-3xl font-bold mb-8 text-gray-800"
+              className="text-3xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               🚚 Warehousing & Distribution Solutions
@@ -640,7 +640,7 @@ const Warehousing: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-8 text-gray-800"
+              className="text-2xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               🏢 What You Need, When You Need It
@@ -665,7 +665,7 @@ const Warehousing: React.FC = () => {
                 className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500"
               >
                 <h3
-                  className="text-xl font-semibold mb-3 text-gray-800"
+                  className="text-xl font-normal mb-3 text-gray-800"
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                 >
                   On-demand Dispatch
@@ -684,7 +684,7 @@ const Warehousing: React.FC = () => {
                 className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500"
               >
                 <h3
-                  className="text-xl font-semibold mb-3 text-gray-800"
+                  className="text-xl font-normal mb-3 text-gray-800"
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                 >
                   Strategic Storage
@@ -703,7 +703,7 @@ const Warehousing: React.FC = () => {
                 className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500"
               >
                 <h3
-                  className="text-xl font-semibold mb-3 text-gray-800"
+                  className="text-xl font-normal mb-3 text-gray-800"
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                 >
                   Inventory Management
@@ -722,7 +722,7 @@ const Warehousing: React.FC = () => {
                 className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500"
               >
                 <h3
-                  className="text-xl font-semibold mb-3 text-gray-800"
+                  className="text-xl font-normal mb-3 text-gray-800"
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                 >
                   Dedicated Team
@@ -762,7 +762,7 @@ const Warehousing: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-8 text-gray-800"
+              className="text-2xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Our Distribution Advantages
@@ -778,7 +778,7 @@ const Warehousing: React.FC = () => {
               >
                 <div className="text-blue-600 text-2xl mb-3">🌐</div>
                 <h3
-                  className="text-xl font-semibold mb-3 text-gray-800"
+                  className="text-xl font-normal mb-3 text-gray-800"
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                 >
                   Global Network
@@ -798,7 +798,7 @@ const Warehousing: React.FC = () => {
               >
                 <div className="text-green-600 text-2xl mb-3">⏱️</div>
                 <h3
-                  className="text-xl font-semibold mb-3 text-gray-800"
+                  className="text-xl font-normal mb-3 text-gray-800"
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                 >
                   Reduced Lead Times
@@ -817,7 +817,7 @@ const Warehousing: React.FC = () => {
               >
                 <div className="text-purple-600 text-2xl mb-3">🔄</div>
                 <h3
-                  className="text-xl font-semibold mb-3 text-gray-800"
+                  className="text-xl font-normal mb-3 text-gray-800"
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                 >
                   Flexible Solutions

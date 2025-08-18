@@ -49,13 +49,13 @@ const VideoSection: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
                 <h2 
-                  className="text-3xl md:text-4xl lg:text-5xl text-white font-semibold text-center px-4 max-w-4xl"
+                  className="text-3xl md:text-4xl lg:text-5xl text-white font-normal text-center px-4 max-w-4xl"
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                 >
                   Delivering Advantage, Not Just Castings
                 </h2>
                 <p 
-                  className="text-xl text-white/90 font-medium"
+                  className="text-xl text-white/90 font-light"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Value addition to Customers

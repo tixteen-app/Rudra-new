@@ -58,7 +58,7 @@ const Prototyping: React.FC = () => {
           >
             <motion.h1
               variants={itemVariants}
-              className="text-3xl font-bold mb-8 text-gray-800"
+              className="text-3xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Prototyping – From Concept to Confidence
@@ -105,7 +105,7 @@ const Prototyping: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-8 text-gray-800"
+              className="text-2xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Why Prototyping Matters
@@ -142,7 +142,7 @@ const Prototyping: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-8 text-gray-800"
+              className="text-2xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Our Prototyping Methods
@@ -155,7 +155,7 @@ const Prototyping: React.FC = () => {
                 variants={itemVariants}
                 className="bg-gray-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   1. Rapid Prototyping (3D Printed Wax Patterns)
                 </h3>
                 <p className="mb-4 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -169,7 +169,7 @@ const Prototyping: React.FC = () => {
                   <li>Results in castings that are mechanically similar to production-grade parts</li>
                 </ul>
                 <div className="mt-4 p-3 bg-blue-50 rounded border-l-4 border-blue-500">
-                  <span className="font-semibold">✅ Ideal for:</span> Low-volume trials, early-stage validation, frequent design changes
+                  <span className="font-normal">✅ Ideal for:</span> Low-volume trials, early-stage validation, frequent design changes
                 </div>
               </motion.div>
 
@@ -179,7 +179,7 @@ const Prototyping: React.FC = () => {
                 variants={itemVariants}
                 className="bg-gray-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   2. Wax Die Prototyping
                 </h3>
                 <p className="mb-4 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -191,7 +191,7 @@ const Prototyping: React.FC = () => {
                   <li>Cost-effective for mid-volume prototyping</li>
                 </ul>
                 <div className="mt-4 p-3 bg-blue-50 rounded border-l-4 border-blue-500">
-                  <span className="font-semibold">✅ Ideal for:</span> Mid-volume runs, design freeze stages, or more representative castings
+                  <span className="font-normal">✅ Ideal for:</span> Mid-volume runs, design freeze stages, or more representative castings
                 </div>
               </motion.div>
 
@@ -201,7 +201,7 @@ const Prototyping: React.FC = () => {
                 variants={itemVariants}
                 className="bg-gray-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   3. Machined or Metal Prototypes
                 </h3>
                 <p className="mb-4 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -213,7 +213,7 @@ const Prototyping: React.FC = () => {
                   <li>Ideal for visual inspection, assembly trials, or basic fit tests</li>
                 </ul>
                 <div className="mt-4 p-3 bg-blue-50 rounded border-l-4 border-blue-500">
-                  <span className="font-semibold">✅ Ideal for:</span> Urgent sample needs, simple prototypes, or physical mock-ups
+                  <span className="font-normal">✅ Ideal for:</span> Urgent sample needs, simple prototypes, or physical mock-ups
                 </div>
               </motion.div>
             </div>
@@ -230,7 +230,7 @@ const Prototyping: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-8 text-gray-800"
+              className="text-2xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Which Option Is Right For You?
@@ -284,7 +284,7 @@ const Prototyping: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-4 text-gray-800"
+              className="text-2xl font-normal mb-4 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Let's Build It Better, Faster

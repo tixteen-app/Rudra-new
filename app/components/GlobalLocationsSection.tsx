@@ -59,7 +59,7 @@ const GlobalLocationsSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 
-            className="text-3xl md:text-4xl lg:text-5xl text-gray-300 font-semibold"
+            className="text-3xl md:text-4xl lg:text-5xl text-gray-300 font-normal"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             We Get it Right First Time
@@ -84,7 +84,7 @@ const GlobalLocationsSection: React.FC = () => {
 
               {/* Award Title */}
               <h3 
-                className="text-base text-white font-semibold mb-2"
+                className="text-base text-white font-normal mb-2"
                 style={{ fontFamily: "Montserrat, sans-serif" }}
               >
                 {award.title}

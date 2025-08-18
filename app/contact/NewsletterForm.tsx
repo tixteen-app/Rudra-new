@@ -32,7 +32,7 @@ const NewsletterForm: React.FC = () => {
       >
         {/* Heading */}
         <h2 
-          className="text-3xl font-semibold text-gray-600 mb-3 tracking-tight"
+          className="text-3xl font-normal text-gray-600 mb-3 tracking-tight"
           style={{ fontFamily: "'Montserrat', sans-serif" }}
         >
           Insights to your inbox

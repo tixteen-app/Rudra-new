@@ -49,7 +49,7 @@ const ServicesSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 
-            className="text-4xl md:text-5xl mb-8 text-gray-800 font-semibold"
+            className="text-4xl md:text-5xl mb-8 text-gray-800 font-normal"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             Our Capabilities
@@ -87,7 +87,7 @@ const ServicesSection: React.FC = () => {
                   <Icon size={32} className="text-white" />
                 </motion.div>
                 <h3 
-                  className="text-xl mb-4 text-gray-800 font-semibold"
+                  className="text-xl mb-4 text-gray-800 font-normal"
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                 >
                   {service.title}

@@ -64,7 +64,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({
     >
       <motion.h2
         variants={itemVariants}
-        className="text-2xl font-bold mb-8 text-gray-800"
+        className="text-2xl font-normal mb-8 text-gray-800 "
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
         {title}
@@ -75,10 +75,10 @@ const FAQSection: React.FC<FAQSectionProps> = ({
           <motion.div
             key={index}
             variants={itemVariants}
-            className="border border-gray-200 rounded-lg overflow-hidden bg-gray-50"
+            className="border border-gray-200 rounded-lg overflow-hidden bg-gray-50 "
           >
             <button
-              className="w-full flex justify-between items-center p-6 text-left hover:bg-gray-100 transition-colors"
+              className="w-full flex justify-between items-center p-6 text-left hover:bg-gray-100 transition-colors py-4"
               onClick={() => toggleFaq(index)}
             >
               <span

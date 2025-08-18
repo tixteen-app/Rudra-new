@@ -115,7 +115,7 @@ const Materials: React.FC = () => {
           >
             <motion.h1
               variants={itemVariants}
-              className="text-3xl font-bold mb-8 text-gray-800"
+              className="text-3xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               🧱 Materials & Alloy Expertise
@@ -149,7 +149,7 @@ const Materials: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-8 text-gray-800"
+              className="text-2xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               ⚙️ Extensive Alloy Casting Capability
@@ -196,7 +196,7 @@ const Materials: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-6 text-gray-800"
+              className="text-2xl font-normal mb-6 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               🔧 Assembly & Testing – Ensuring End-to-End Reliability
@@ -211,7 +211,7 @@ const Materials: React.FC = () => {
             </motion.p>
 
             <motion.div variants={itemVariants} className="mb-8">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+              <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                 🔩 Assembly Services
               </h3>
               <p className="mb-4 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -235,7 +235,7 @@ const Materials: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-8 text-gray-800"
+              className="text-2xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               🧪 Testing Capabilities
@@ -255,7 +255,7 @@ const Materials: React.FC = () => {
                 variants={itemVariants}
                 className="bg-red-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   🔥 Destructive Testing Methods
                 </h3>
                 <p className="mb-4 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -285,7 +285,7 @@ const Materials: React.FC = () => {
                 variants={itemVariants}
                 className="bg-green-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   🔍 Non-Destructive Testing (NDT) Methods
                 </h3>
                 <p className="mb-4 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -314,7 +314,7 @@ const Materials: React.FC = () => {
                 variants={itemVariants}
                 className="bg-blue-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   🧰 Metrology & Instrumentation Facilities
                 </h3>
                 <p className="mb-4 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -335,7 +335,7 @@ const Materials: React.FC = () => {
                   </ul>
                 </div>
                 <p className="mt-4 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
-                  <span className="font-semibold">⚖️ Calibration:</span> In-house calibration capabilities ensure the accuracy and consistency of our measurement instruments and testing equipment.
+                  <span className="font-normal">⚖️ Calibration:</span> In-house calibration capabilities ensure the accuracy and consistency of our measurement instruments and testing equipment.
                 </p>
               </motion.div>
             </motion.div>

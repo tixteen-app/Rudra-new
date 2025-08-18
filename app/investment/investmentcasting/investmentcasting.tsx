@@ -59,7 +59,7 @@ const Invesmentcasting: React.FC = () => {
           >
             <motion.h1
               variants={itemVariants}
-              className="text-3xl font-bold mb-8 text-gray-800"
+              className="text-3xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Our Investment Casting Process
@@ -98,7 +98,7 @@ const Invesmentcasting: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-8 text-gray-800"
+              className="text-2xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Our Investment Casting Methods
@@ -111,7 +111,7 @@ const Invesmentcasting: React.FC = () => {
                 variants={itemVariants}
                 className="bg-gray-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   1. Tilt Pouring
                 </h3>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -127,7 +127,7 @@ const Invesmentcasting: React.FC = () => {
                 variants={itemVariants}
                 className="bg-gray-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   2. Ladle Pouring
                 </h3>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -143,7 +143,7 @@ const Invesmentcasting: React.FC = () => {
                 variants={itemVariants}
                 className="bg-gray-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   3. Roll-Over Pouring
                 </h3>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -159,7 +159,7 @@ const Invesmentcasting: React.FC = () => {
                 variants={itemVariants}
                 className="bg-gray-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   4. Low-Pressure Aluminum Casting
                 </h3>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -182,7 +182,7 @@ const Invesmentcasting: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-8 text-gray-800"
+              className="text-2xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Why These Methods Matter to You
@@ -197,7 +197,7 @@ const Invesmentcasting: React.FC = () => {
                 variants={itemVariants}
                 className="bg-blue-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   Optimized for Your Needs
                 </h3>
                 <p className="text-gray-700 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -210,7 +210,7 @@ const Invesmentcasting: React.FC = () => {
                 variants={itemVariants}
                 className="bg-blue-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   Enhanced Quality
                 </h3>
                 <p className="text-gray-700 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -223,7 +223,7 @@ const Invesmentcasting: React.FC = () => {
                 variants={itemVariants}
                 className="bg-blue-50 p-6 rounded-lg"
               >
-                <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   Efficiency in Production
                 </h3>
                 <p className="text-gray-700 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>

@@ -43,7 +43,7 @@ const StatisticsSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 
-            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-semibold"
+            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-normal"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             We're Backed by Numbers

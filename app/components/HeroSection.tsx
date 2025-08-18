@@ -66,7 +66,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ heading, message }) => {
         >
           {/* Company Name (Biggest text) */}
           <h1
-            className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-gray-900 mb-6"
+            className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-medium tracking-tight text-gray-900 mb-6"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             {heading}
@@ -75,7 +75,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ heading, message }) => {
           {/* Tagline (smaller below) */}
           {message && (
             <motion.p
-              className="max-w-3xl mx-auto text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 font-normal leading-relaxed"
+              className="max-w-3xl mx-auto text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 font-light leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}

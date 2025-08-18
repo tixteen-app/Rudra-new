@@ -37,7 +37,7 @@ const IndustriesSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 
-            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-semibold"
+            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-normal"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             We Span Industries & Relish Complex Challenges
@@ -72,7 +72,7 @@ const IndustriesSection: React.FC = () => {
               <div className="absolute inset-0 flex items-end justify-between p-6">
                 {/* Industry Name */}
                 <h3 
-                  className="text-white text-xl md:text-2xl lg:text-3xl font-semibold"
+                  className="text-white text-xl md:text-2xl lg:text-3xl font-normal"
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                 >
                   {industry.name}

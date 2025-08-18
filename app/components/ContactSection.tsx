@@ -16,7 +16,7 @@ const ContactSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 
-            className="text-3xl md:text-4xl lg:text-5xl text-white font-semibold mb-8"
+            className="text-3xl md:text-4xl lg:text-5xl text-white font-normal mb-8"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             Get In Touch

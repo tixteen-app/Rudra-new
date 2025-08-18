@@ -353,7 +353,7 @@
 //                   onFocus={() => handleMouseEnter(idx)}
 //                   className={`transition-colors text-lg font-medium px-3 py-2 ${
 //                     hoverIdx === idx
-//                       ? "text-gray-900 font-semibold"
+//                       ? "text-gray-900 font-normal"
 //                       : "text-[#6a6c72]"
 //                   }`}
 //                   style={{ fontFamily: "var(--kohinoor-2)" }}
@@ -440,7 +440,7 @@
 //               >
 //                 <Link
 //                   href={section.href}
-//                   className="w-full flex justify-between items-center py-3 font-semibold text-gray-800 hover:text-gray-900"
+//                   className="w-full flex justify-between items-center py-3 font-normal text-gray-800 hover:text-gray-900"
 //                   onClick={closeMobileMenu}
 //                 >
 //                   {section.title}
@@ -825,7 +825,7 @@
 //                   onFocus={() => handleMouseEnter(idx)}
 //                   className={`transition-colors text-lg font-medium px-3 py-2 ${
 //                     hoverIdx === idx
-//                       ? "text-gray-900 font-semibold"
+//                       ? "text-gray-900 font-normal"
 //                       : "text-[#6a6c72]"
 //                   }`}
 //                   style={{ fontFamily: "var(--kohinoor-2)" }}
@@ -912,7 +912,7 @@
 //               >
 //                 <Link
 //                   href={section.href}
-//                   className="w-full flex justify-between items-center py-3 font-semibold text-gray-800 hover:text-gray-900"
+//                   className="w-full flex justify-between items-center py-3 font-normal text-gray-800 hover:text-gray-900"
 //                   onClick={closeMobileMenu}
 //                 >
 //                   {section.title}
@@ -1266,8 +1266,8 @@ const Header: React.FC = () => {
                <motion.img
       src="/Rudra-Logo.png"
       alt="Rudra Logo"
-      initial={{ scale: 2.1 }}
-      animate={{ scale: hasScrolled ? 1 : 2.1 }}
+      initial={{ scale: 2.5  }}
+      animate={{ scale: hasScrolled ? 1 : 2.5  }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="w-[180px] h-auto"
     />
@@ -1290,7 +1290,7 @@ const Header: React.FC = () => {
                   onFocus={() => handleMouseEnter(idx)}
                   className={`transition-colors text-lg font-medium px-3 py-2 ${
                     hoverIdx === idx
-                      ? "text-gray-900 font-semibold"
+                      ? "text-gray-900 font-normal"
                       : "text-[#6a6c72]"
                   }`}
                   style={{ fontFamily: "var(--kohinoor-2)" }}
@@ -1377,7 +1377,7 @@ const Header: React.FC = () => {
               >
                 <Link
                   href={section.href}
-                  className="w-full flex justify-between items-center py-3 font-semibold text-gray-800 hover:text-gray-900"
+                  className="w-full flex justify-between items-center py-3 font-normal text-gray-800 hover:text-gray-900"
                   onClick={closeMobileMenu}
                 >
                   {section.title}

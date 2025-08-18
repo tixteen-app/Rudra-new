@@ -38,7 +38,7 @@ const NewsSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 
-            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-semibold"
+            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-normal"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             Latest News Articles
@@ -78,7 +78,7 @@ const NewsSection: React.FC = () => {
 
                 {/* Title */}
                 <h3 
-                  className="text-gray-800 text-lg font-semibold leading-tight"
+                  className="text-gray-800 text-lg font-normal leading-tight"
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                 >
                   {article.title}

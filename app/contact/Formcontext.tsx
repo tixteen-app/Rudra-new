@@ -41,7 +41,7 @@
 //         className="w-full max-w-2xl bg-white rounded-lg"
 //         style={{ fontFamily: "'Inter', sans-serif" }}
 //       >
-//         <h2 className="text-center text-3xl font-semibold mb-10 text-gray-900 tracking-tight" 
+//         <h2 className="text-center text-3xl font-normal mb-10 text-gray-900 tracking-tight" 
 //             style={{ fontFamily: "'Montserrat', sans-serif" }}>
 //           Get in Touch
 //         </h2>
@@ -216,7 +216,7 @@ const ContactForm: React.FC = () => {
         className="w-full max-w-2xl bg-white rounded-lg"
         style={{ fontFamily: "'Inter', sans-serif" }}
       >
-        <h2 className="text-center text-3xl font-semibold mb-10 text-gray-900 tracking-tight" 
+        <h2 className="text-center text-3xl font-normal mb-10 text-gray-900 tracking-tight" 
             style={{ fontFamily: "'Montserrat', sans-serif" }}>
           Get in Touch
         </h2>

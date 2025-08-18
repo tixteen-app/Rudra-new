@@ -319,7 +319,7 @@ const ProductSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 
-            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-semibold"
+            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-normal"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             We Deliver instead of "Your Purpose,Our Priority"
@@ -373,7 +373,7 @@ const ProductSection: React.FC = () => {
                       <div className="space-y-3 text-md ">
                         <div>
                           <p 
-                            className="text-lg font-semibold"
+                            className="text-lg font-normal"
                             style={{ fontFamily: "Montserrat, sans-serif" }}
                           >
                             Industry
@@ -387,7 +387,7 @@ const ProductSection: React.FC = () => {
                         </div> 
                         <div>
                           <p 
-                            className="text-lg font-semibold"
+                            className="text-lg font-normal"
                             style={{ fontFamily: "Montserrat, sans-serif" }}
                           >
                             Weight
@@ -401,7 +401,7 @@ const ProductSection: React.FC = () => {
                         </div>
                         <div>
                           <p 
-                            className="text-lg font-semibold"
+                            className="text-lg font-normal"
                             style={{ fontFamily: "Montserrat, sans-serif" }}
                           >
                             Material
@@ -415,7 +415,7 @@ const ProductSection: React.FC = () => {
                         </div>
                         <div>
                           <p 
-                            className="text-lg font-semibold"
+                            className="text-lg font-normal"
                             style={{ fontFamily: "Montserrat, sans-serif" }}
                           >
                             Focus

@@ -163,7 +163,7 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
           >
             <h3 
-              className="text-lg font-semibold mb-4"
+              className="text-lg font-normal mb-4"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Rudra Castings

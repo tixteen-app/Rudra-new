@@ -31,7 +31,7 @@ const RightSidebar = ({ sections }: RightSidebarProps) => {
   return (
     <aside className="w-80 h-screen sticky top-0 bg-gray-50 p-8 border-l border-gray-200">
       <h2
-        className="font-bold text-2xl mb-8 text-gray-800"
+        className="font-normal text-2xl mb-8 text-gray-800"
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
         On this page

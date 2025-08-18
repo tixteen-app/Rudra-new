@@ -16,14 +16,14 @@ const MarqueeSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2
-            className="text-3xl md:text-5xl text-gray-800 leading-tight font-semibold mb-8"
+            className="text-3xl md:text-5xl text-gray-800 leading-tight font-normal mb-8"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             Crafted in India. Trusted for Precision.
           </h2>
 
           <p
-            className="text-xl md:text-2xl text-gray-700 leading-relaxed font-normal"
+            className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             Since 2008, Rudra Castings has grown from a humble beginning into a
@@ -33,7 +33,7 @@ const MarqueeSection: React.FC = () => {
           </p>
 
           <p
-            className="text-xl md:text-2xl text-gray-700 leading-relaxed font-normal"
+            className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             Operating from our 75,000 sq. ft., ISO-certified facility in Punjab,

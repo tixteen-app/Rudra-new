@@ -59,7 +59,7 @@ const Tooling: React.FC = () => {
           >
             <motion.h1
               variants={itemVariants}
-              className="text-3xl font-bold mb-8 text-gray-800"
+              className="text-3xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Machining & Finishing
@@ -100,7 +100,7 @@ const Tooling: React.FC = () => {
               variants={itemVariants}
               className="bg-gray-50 p-6 rounded-lg mb-8"
             >
-              <h2 className="text-2xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+              <h2 className="text-2xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                 CNC Turning Centres
               </h2>
               <ul className="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -116,7 +116,7 @@ const Tooling: React.FC = () => {
               variants={itemVariants}
               className="bg-gray-50 p-6 rounded-lg mb-8"
             >
-              <h2 className="text-2xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+              <h2 className="text-2xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                 Vertical Machining Centres (VMC)
               </h2>
               <ul className="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -131,7 +131,7 @@ const Tooling: React.FC = () => {
               variants={itemVariants}
               className="bg-gray-50 p-6 rounded-lg mb-8"
             >
-              <h2 className="text-2xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+              <h2 className="text-2xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                 4-Axis & 5-Axis VMCs
               </h2>
               <ul className="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -149,7 +149,7 @@ const Tooling: React.FC = () => {
             >
               {/* Broaching */}
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   Broaching
                 </h3>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -160,7 +160,7 @@ const Tooling: React.FC = () => {
 
               {/* Special Purpose Machines */}
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   Special Purpose Machines (SPMs)
                 </h3>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -171,7 +171,7 @@ const Tooling: React.FC = () => {
 
               {/* Multi-Head Drilling */}
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   Multi-Head Drilling Machines
                 </h3>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -194,7 +194,7 @@ const Tooling: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-8 text-gray-800"
+              className="text-2xl font-normal mb-8 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               What Sets Our Machining Apart?
@@ -208,7 +208,7 @@ const Tooling: React.FC = () => {
                 variants={itemVariants}
                 className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500"
               >
-                <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   Integrated Cast-to-Finish Workflow
                 </h3>
                 <p className="text-gray-700 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -220,7 +220,7 @@ const Tooling: React.FC = () => {
                 variants={itemVariants}
                 className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500"
               >
-                <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   High Precision, Tight Tolerances
                 </h3>
                 <p className="text-gray-700 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -232,7 +232,7 @@ const Tooling: React.FC = () => {
                 variants={itemVariants}
                 className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500"
               >
-                <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="text-xl font-normal mb-3 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   Custom Finishing Options
                 </h3>
                 <p className="text-gray-700 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -253,7 +253,7 @@ const Tooling: React.FC = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-2xl font-bold mb-6 text-gray-800"
+              className="text-2xl font-normal mb-6 text-gray-800"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               In-House Tooling
@@ -279,7 +279,7 @@ const Tooling: React.FC = () => {
               variants={itemVariants}
               className="mb-8"
             >
-              <h3 className="text-xl font-semibold mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
+              <h3 className="text-xl font-normal mb-4 text-gray-800" style={{ fontFamily: "Montserrat, sans-serif" }}>
                 With in-house tooling, we ensure:
               </h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
