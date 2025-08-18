@@ -87,10 +87,10 @@ const useResponsiveValues = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1700) {
-        setXValue("400%");
-        setSpadding("50px");
+        setXValue("440%");
+        setSpadding("115px");
       } else if (window.innerWidth >= 1400) {
-        setXValue("330%");
+        setXValue("325%");
         setSpadding("8px");
       } else if (window.innerWidth >= 1024) {
         setXValue("240%");
