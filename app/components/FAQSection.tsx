@@ -14,12 +14,12 @@ interface FAQSectionProps {
   title?: string;
 }
 
-const FAQSection: React.FC<FAQSectionProps> = ({ 
-  faqs: initialFaqs, 
-  title = "Frequently Asked Questions (FAQs)" 
+const FAQSection: React.FC<FAQSectionProps> = ({
+  faqs: initialFaqs,
+  title = "Frequently Asked Questions (FAQs)",
 }) => {
   const [faqs, setFaqs] = useState<FAQItem[]>(
-    initialFaqs.map(faq => ({ ...faq, isOpen: faq.isOpen || false }))
+    initialFaqs.map((faq) => ({ ...faq, isOpen: faq.isOpen || false }))
   );
 
   const toggleFaq = (index: number) => {
@@ -50,8 +50,6 @@ const FAQSection: React.FC<FAQSectionProps> = ({
       transition: { duration: 0.5 },
     },
   };
-
-
 
   return (
     <motion.section
@@ -106,45 +104,50 @@ const FAQSection: React.FC<FAQSectionProps> = ({
                   animate="open"
                   exit="closed"
                   variants={{
-                          open: {
-                            opacity: 1,
-                            height: "auto",
-                            transition: {
-                              height: {
-                                duration: 0.4,
-                                ease: [0.4, 0, 0.2, 1], // Cubic bezier array
-                              },
-                              opacity: {
-                                duration: 0.3,
-                                ease: [0.4, 0, 0.2, 1],
-                                delay: 0.1,
-                              },
-                            },
-                          },
-                          closed: {
-                            opacity: 0,
-                            height: 0,
-                            transition: {
-                              height: {
-                                duration: 0.3,
-                                ease: [0.4, 0, 0.2, 1],
-                              },
-                              opacity: {
-                                duration: 0.2,
-                                ease: [0.4, 0, 0.2, 1],
-                              },
-                            },
-                          },
-                        }}
+                    open: {
+                      opacity: 1,
+                      height: "auto",
+                      transition: {
+                        height: {
+                          duration: 0.4,
+                          ease: [0.4, 0, 0.2, 1], 
+                        },
+                        opacity: {
+                          duration: 0.3,
+                          ease: [0.4, 0, 0.2, 1],
+                          delay: 0.1,
+                        },
+                      },
+                    },
+                    closed: {
+                      opacity: 0,
+                      height: 0,
+                      transition: {
+                        height: {
+                          duration: 0.3,
+                          ease: [0.4, 0, 0.2, 1],
+                        },
+                        opacity: {
+                          duration: 0.2,
+                          ease: [0.4, 0, 0.2, 1],
+                        },
+                      },
+                    },
+                  }}
                   className="overflow-hidden"
                 >
                   <div className="px-6 pb-6">
                     <div
                       className="text-gray-700 leading-relaxed"
-                      style={{ fontFamily: "Inter, sans-serif" }}
+                      style={{ fontFamily: "Inter, sans-serif",
+                      backgroundColor: "rgba(248,247,247,255)"
+
+
+                       }}
                     >
                       {faq.answer.split("\n").map((paragraph, i) => (
-                        <p key={i} className="mb-4 last:mb-0 text-lg pt-5">
+                        <p key={i} className="mb-4 last:mb-0 text-lg pt-5"
+                        >
                           {paragraph}
                         </p>
                       ))}

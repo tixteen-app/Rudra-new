@@ -6,8 +6,8 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const MarqueeSection: React.FC = () => {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-8">
+    <section className="py-24 bg-paper" style={{backgroundColor: "rgba(248,247,247,255)"}} >
+      <div className="max-w-7xl mx-auto px-8 bg-paper">
         <motion.div
           className="max-w-6xl mx-auto text-center space-y-12"  
           initial={{ opacity: 0, y: 40 }}
