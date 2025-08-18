@@ -971,13 +971,13 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 const navItems = [
   {
     title: "Solutions",
-    href: "/",
+    href: "/investment/investmentcasting",
     items: [
-      { name: "Investment Casting Process", href: "/solutions/investment-casting" },
+      { name: "Investment Casting Process", href: "/investment/investmentcasting" },
       { name: "Machining & Finishing", href: "/solutions/machining-finishing" },
-      { name: "In-House Tooling", href: "/solutions/in-house-tooling" },
-      { name: "Prototyping Services", href: "/solutions/prototyping" },
-      { name: "Material Options", href: "/solutions/materials" },
+      { name: "In-House Tooling", href: "/investment/tooling" },
+      { name: "Prototyping Services", href: "/investment/prototyping" },
+      { name: "Material Options", href: "/investment/materials" },
       { name: "Quality Inspection & Testing", href: "/solutions/quality" },
       { name: "Global Distribution Support", href: "/solutions/distribution" },
     ],
