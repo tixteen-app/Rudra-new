@@ -1246,8 +1246,8 @@ const Header: React.FC = () => {
             initial={{ opacity: 1, scale: 1.8 }}
             animate={{
               opacity: 1,
-              scale: hasScrolled ? 1 : 1.8,
-              top: hasScrolled ? 0 : "30vh",
+              scale: hasScrolled ? 1 : 1.9,
+              top: hasScrolled ? 0 : "26vh",
               left: hasScrolled ? 0 : "50%",
               transform: hasScrolled
                 ? "translateX(0%)"
@@ -1256,13 +1256,21 @@ const Header: React.FC = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <Link href="/">
-              <Image
+              {/* <Image
                 src="/Rudra-Logo.png"
                 alt="Rudra Logo"
                 width={180}
                 height={45}
                 priority
-              />
+              /> */}
+               <motion.img
+      src="/Rudra-Logo.png"
+      alt="Rudra Logo"
+      initial={{ scale: 2.1 }}
+      animate={{ scale: hasScrolled ? 1 : 2.1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="w-[180px] h-auto"
+    />
             </Link>
           </motion.div>
           </div>
